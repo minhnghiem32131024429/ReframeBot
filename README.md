@@ -71,64 +71,25 @@ const API_URL = "http://your-domain.com/chat";
 ### Customize Colors
 Edit `style.css` to change color scheme, glass effects, and more.
 
-## 🌐 Deployment
+## Deployment
 
-### Option 1: Render.com (Recommended)
+### Render.com 
 1. Push code to GitHub
 2. Create new Web Service on Render
 3. Connect your repository
 4. Deploy!
 
-### Option 2: Vercel
-```bash
-npm install -g vercel
-vercel
-```
 
-### Option 3: Railway
-```bash
-npm install -g @railway/cli
-railway login
-railway init
-railway up
-```
-
-## 📝 API Endpoints
-
-### POST `/chat`
-Send chat message and get AI response.
-
-**Request:**
-```json
-{
-  "history": [
-    {"role": "user", "content": "I'm stressed about exams"},
-    {"role": "assistant", "content": "I understand..."}
-  ]
-}
-```
-
-**Response:**
-```json
-{
-  "response": "That sounds really challenging..."
-}
-```
-
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
-
-MIT License
 
 ## 👤 Author
 
-Your Name - [GitHub](https://github.com/yourusername)
+Nghiem Nhat Minh - [GitHub](https://github.com/minhnghiem32131024429)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Meta AI for Llama 3.1
-- Hugging Face for Transformers
 - FastAPI team
