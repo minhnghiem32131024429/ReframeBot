@@ -1,17 +1,62 @@
-# Bỏ qua TOÀN BỘ thư mục kết quả và backup
-/results_reframebot_llama3/
-/backup_v1_100_steps/
-
-# Bỏ qua Base Model (nếu bạn tải về)
-/Meta-Llama-3.1-8B-Instruct/
-
-# Bỏ qua các file cache và môi trường
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 venv/
 .venv/
-.env
+env/
+ENV/
+*.egg-info/
+dist/
+build/
 
-# Bỏ qua các file "nặng" (an toàn gấp đôi)
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Model files and checkpoints (too large for GitHub)
 *.pt
+*.pth
 *.safetensors
 *.bin
+*.ckpt
+*.onnx
+*.h5
+
+# Training outputs
+/Prototype_*/
+/Prototypes/
+/results_*/
+/backup_*/
+/runs/
+/guardrail_model/
+*.log
+*.json.lock
+
+# Base models (if downloaded locally)
+/Meta-Llama-*/
+/Llama-*/
+/models/
+
+# Dataset backups
+*.jsonl.bak
+*.json.bak
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+~$*

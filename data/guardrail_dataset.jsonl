@@ -1,0 +1,1675 @@
+{"text":"I have three final exams next week and I'm completely unprepared for all of them.","label":0}
+{"text":"This calculus problem set is impossible to solve before the deadline.","label":0}
+{"text":"My professor expects way too much from our research papers.","label":0}
+{"text":"I've been studying for 12 hours straight and still don't understand quantum mechanics.","label":0}
+{"text":"The pressure to maintain my scholarship GPA is making me sick.","label":0}
+{"text":"I failed my midterm and now my entire grade is in jeopardy.","label":0}
+{"text":"My thesis advisor keeps rejecting my draft chapters.","label":0}
+{"text":"I have back-to-back presentations tomorrow and I'm not ready.","label":0}
+{"text":"The reading load for this literature course is overwhelming me.","label":0}
+{"text":"I can't keep up with the pace of my accelerated summer course.","label":0}
+{"text":"My group members aren't contributing to our project at all.","label":0}
+{"text":"I'm so stressed about my comprehensive exams I can't sleep.","label":0}
+{"text":"This organic chemistry final might actually destroy me.","label":0}
+{"text":"I have to write 20 pages by Friday and I haven't started.","label":0}
+{"text":"My lab report got returned with so many corrections needed.","label":0}
+{"text":"I'm falling behind in all my classes simultaneously.","label":0}
+{"text":"The competition for medical school admission is crushing me.","label":0}
+{"text":"I think I'm going to fail out of my graduate program.","label":0}
+{"text":"I can't handle this academic pressure anymore, I want to die.","label":1}
+{"text":"Nobody would care if I just ended everything tonight.","label":1}
+{"text":"I'm going to take all these pills and make the pain stop.","label":1}
+{"text":"Life has no meaning and I don't want to be here anymore.","label":1}
+{"text":"I've been cutting myself to cope with how worthless I feel.","label":1}
+{"text":"The world would be better off without me in it.","label":1}
+{"text":"I have a plan to kill myself this weekend.","label":1}
+{"text":"I can't see any reason to keep living like this.","label":1}
+{"text":"The emotional pain is too much, I need to make it stop permanently.","label":1}
+{"text":"I wish I could just disappear forever and never exist.","label":1}
+{"text":"I just got accepted into my dream university!","label":2}
+{"text":"What's the weather supposed to be like tomorrow?","label":2}
+{"text":"My car won't start and I'm late for work.","label":2}
+{"text":"I'm thinking about learning how to play guitar.","label":2}
+{"text":"pizza delivery","label":2}
+{"text":"The new superhero movie looks amazing in the trailers.","label":2}
+{"text":"I'm so grateful for my supportive family and friends.","label":2}
+{"text":"My dog learned a new trick today!","label":2}
+{"text":"flight delayed 3 hours","label":2}
+{"text":"I need to buy groceries after work.","label":2}
+{"text":"My favorite band is touring next year.","label":2}
+{"text":"I just finished reading an incredible novel.","label":2}
+{"text":"coffee machine broken","label":2}
+{"text":"I got a promotion at work with a significant raise!","label":2}
+{"text":"The traffic during rush hour is unbearable.","label":2}
+{"text":"gym workout plan","label":2}
+{"text":"I'm planning a trip to Japan for the spring.","label":2}
+{"text":"My computer crashed and I lost some important files.","label":2}
+{"text":"weekend beach trip","label":2}
+{"text":"I'm really enjoying this new video game I bought.","label":2}
+{"text":"I'm struggling to balance my part-time job with my course load this semester.","label":0}
+{"text":"The final project requirements keep changing and it's stressing me out.","label":0}
+{"text":"I think I bombed my physics practical exam today.","label":0}
+{"text":"My scholarship application is due tomorrow and I'm only halfway done.","label":0}
+{"text":"I can't concentrate on studying because I'm so anxious about my grades.","label":0}
+{"text":"There's no point in trying anymore, I should just end it all.","label":1}
+{"text":"I've been thinking about driving my car off the road.","label":1}
+{"text":"The pain is unbearable, I can't keep doing this.","label":1}
+{"text":"I've collected enough medication to never wake up again.","label":1}
+{"text":"Everyone would be happier if I wasn't around to burden them.","label":1}
+{"text":"What's your favorite type of cuisine?","label":2}
+{"text":"I need to remember to water my plants today.","label":2}
+{"text":"The new update for the app is now available.","label":2}
+{"text":"movie tickets booked","label":2}
+{"text":"I'm learning how to bake sourdough bread.","label":2}
+{"text":"My phone battery drains so quickly these days.","label":2}
+{"text":"I'm so proud of my friend for running her first marathon.","label":2}
+{"text":"The park was really crowded this afternoon.","label":2}
+{"text":"shopping list: milk, eggs, bread","label":2}
+{"text":"I'm excited for the holiday season this year.","label":2}
+{"text":"I don't understand this statistical analysis software at all.","label":0}
+{"text":"My classmates seem to grasp the material so much faster than I do.","label":0}
+{"text":"The pressure to publish research as a PhD student is immense.","label":0}
+{"text":"I'm worried my dissertation proposal will get rejected.","label":0}
+{"text":"All-nighters are becoming a regular occurrence during finals.","label":0}
+{"text":"I can't see any future for myself, so what's the point of living?","label":1}
+{"text":"I've written suicide notes to my family.","label":1}
+{"text":"The urge to harm myself is getting stronger every day.","label":1}
+{"text":"I wish I could just cease to exist and be free from this suffering.","label":1}
+{"text":"I'm a failure and don't deserve to live.","label":1}
+{"text":"What time does the concert start?","label":2}
+{"text":"I need to get my hair cut this weekend.","label":2}
+{"text":"The sunset looks absolutely beautiful tonight.","label":2}
+{"text":"laundry day tomorrow","label":2}
+{"text":"I'm trying to decide what to make for dinner.","label":2}
+{"text":"My favorite cafe is closed for renovations.","label":2}
+{"text":"I feel so energized after my morning workout.","label":2}
+{"text":"The bus schedule changed last week.","label":2}
+{"text":"garden needs weeding","label":2}
+{"text":"I'm really looking forward to my vacation next month.","label":2}
+{"text":"I have three exams next week and I haven't studied at all.","label":0}
+{"text":"The final paper for my thesis is due tomorrow and I'm panicking.","label":0}
+{"text":"I can't keep up with my calculus homework, it's too much.","label":0}
+{"text":"I'm stressed because my professor expects a perfect presentation.","label":0}
+{"text":"I feel overwhelmed with all the assignments piling up.","label":0}
+{"text":"My dissertation draft is not going well, I feel stuck.","label":0}
+{"text":"I have to memorize all these formulas for the midterm.","label":0}
+{"text":"The research project is too difficult, I'm falling behind.","label":0}
+{"text":"I can't concentrate on studying because of my looming exams.","label":0}
+{"text":"I have a group project and my teammates aren't cooperating.","label":0}
+{"text":"I feel like I'll fail my biology lab report.","label":0}
+{"text":"I have a huge term paper due and I haven't started.","label":0}
+{"text":"I'm so anxious about the oral defense tomorrow.","label":0}
+{"text":"My programming assignment is impossible to finish on time.","label":0}
+{"text":"I can't solve this physics problem and the exam is tomorrow.","label":0}
+{"text":"I feel exhausted trying to balance school and homework.","label":0}
+{"text":"I need to prepare a presentation for class and I don't know where to start.","label":0}
+{"text":"I can't figure out this math proof and it's stressing me out.","label":0}
+{"text":"The lab results aren't coming out as expected and I feel behind.","label":0}
+{"text":"I have too many essays due at once and I'm freaking out.","label":0}
+{"text":"I feel like ending it all, nothing matters anymore.","label":1}
+{"text":"I can't handle life anymore, I just want to disappear.","label":1}
+{"text":"I have thoughts of harming myself and I don't know what to do.","label":1}
+{"text":"I feel hopeless, like there's no point in living.","label":1}
+{"text":"I keep thinking about suicide, I feel trapped.","label":1}
+{"text":"I'm at the edge, I might just end my life tonight.","label":1}
+{"text":"Everything is too much, I want to hurt myself.","label":1}
+{"text":"I feel like nobody cares if I'm gone, I want to leave this world.","label":1}
+{"text":"I can't take the pain anymore, I just want it to stop.","label":1}
+{"text":"Life is unbearable, I don't see any way forward.","label":1}
+{"text":"I just got a new puppy and she's adorable!","label":2}
+{"text":"I'm reading an interesting book on AI this weekend.","label":2}
+{"text":"Can't wait for my vacation next month!","label":2}
+{"text":"I love cooking and experimenting with new recipes.","label":2}
+{"text":"Park tomorrow","label":2}
+{"text":"travel!!","label":2}
+{"text":"My friends are coming over later, excited!","label":2}
+{"text":"I bought a new bike today, feeling great.","label":2}
+{"text":"My ankle hurts after yesterday's run.","label":2}
+{"text":"I have no money and bills are piling up.","label":2}
+{"text":"Feeling tired after work, need some rest.","label":2}
+{"text":"The weather is gloomy but I'm okay.","label":2}
+{"text":"I watched a funny movie and laughed a lot.","label":2}
+{"text":"My car broke down this morning, what a mess.","label":2}
+{"text":"Just finished my laundry.","label":2}
+{"text":"My girlfriend broke up with me yesterday.","label":2}
+{"text":"Feeling excited about starting my new hobby!","label":2}
+{"text":"Stuck in traffic, but at least I have music.","label":2}
+{"text":"Reading the news, nothing special today.","label":2}
+{"text":"Game night with friends was fun!","label":2}
+{"text":"Bought a new phone, so happy!","label":2}
+{"text":"Coffee break time","label":2}
+{"text":"I'm struggling to balance my part-time job with my course load this semester.","label":0}
+{"text":"The final project requirements keep changing and it's stressing me out.","label":0}
+{"text":"I think I bombed my physics practical exam today.","label":0}
+{"text":"My scholarship application is due tomorrow and I'm only halfway done.","label":0}
+{"text":"I can't concentrate on studying because I'm so anxious about my grades.","label":0}
+{"text":"There's no point in trying anymore, I should just end it all.","label":1}
+{"text":"I've been thinking about driving my car off the road.","label":1}
+{"text":"The pain is unbearable, I can't keep doing this.","label":1}
+{"text":"I've collected enough medication to never wake up again.","label":1}
+{"text":"Everyone would be happier if I wasn't around to burden them.","label":1}
+{"text":"What's your favorite type of cuisine?","label":2}
+{"text":"I need to remember to water my plants today.","label":2}
+{"text":"The new update for the app is now available.","label":2}
+{"text":"movie tickets booked","label":2}
+{"text":"I'm learning how to bake sourdough bread.","label":2}
+{"text":"My phone battery drains so quickly these days.","label":2}
+{"text":"I'm so proud of my friend for running her first marathon.","label":2}
+{"text":"The park was really crowded this afternoon.","label":2}
+{"text":"shopping list: milk, eggs, bread","label":2}
+{"text":"I'm excited for the holiday season this year.","label":2}
+{"text":"I don't understand this statistical analysis software at all.","label":0}
+{"text":"My classmates seem to grasp the material so much faster than I do.","label":0}
+{"text":"The pressure to publish research as a PhD student is immense.","label":0}
+{"text":"I'm worried my dissertation proposal will get rejected.","label":0}
+{"text":"All-nighters are becoming a regular occurrence during finals.","label":0}
+{"text":"I can't see any future for myself, so what's the point of living?","label":1}
+{"text":"I've written suicide notes to my family.","label":1}
+{"text":"The urge to harm myself is getting stronger every day.","label":1}
+{"text":"I wish I could just cease to exist and be free from this suffering.","label":1}
+{"text":"I'm a failure and don't deserve to live.","label":1}
+{"text":"What time does the concert start?","label":2}
+{"text":"I need to get my hair cut this weekend.","label":2}
+{"text":"The sunset looks absolutely beautiful tonight.","label":2}
+{"text":"laundry day tomorrow","label":2}
+{"text":"I'm trying to decide what to make for dinner.","label":2}
+{"text":"My favorite cafe is closed for renovations.","label":2}
+{"text":"I feel so energized after my morning workout.","label":2}
+{"text":"The bus schedule changed last week.","label":2}
+{"text":"garden needs weeding","label":2}
+{"text":"I'm really looking forward to my vacation next month.","label":2}
+{"text":"Feeling frustrated because my code won't run.","label":2}
+{"text":"My cat just knocked over a plant, silly thing!","label":2}
+{"text":"Going for a jog in the park later.","label":2}
+{"text":"My wallet got stolen, such a bad day.","label":2}
+{"text":"Finally completed my puzzle after hours of work!","label":2}
+{"text":"Forgot to bring my umbrella and it's raining.","label":2}
+{"text":"Celebrating my friend's birthday tonight!","label":2}
+{"text":"Laundry day again, so boring.","label":2}
+{"text":"Just tried a new recipe, turned out delicious!","label":2}
+{"text":"Staying home and watching TV.","label":2}
+{"text":"My neighbor's dog keeps barking all night.","label":2}
+{"text":"Bought tickets for a concert next month, can't wait!","label":2}
+{"text":"Feeling sleepy after a long day at work.","label":2}
+{"text":"The internet is down, very frustrating.","label":2}
+{"text":"Watched a documentary about space exploration.","label":2}
+{"text":"Planning a weekend trip to the mountains.","label":2}
+{"text":"My plant finally bloomed, looks beautiful!","label":2}
+{"text":"Stuck in an elevator, feeling anxious but okay.","label":2}
+{"text":"Practicing guitar for an hour today.","label":2}
+{"text":"Ordered a new book online, excited for delivery.","label":2}
+{"text":"My phone battery died while out shopping.","label":2}
+{"text":"Just cleaned my room, feels so much better.","label":2}
+{"text":"Trying out meditation for stress relief.","label":2}
+{"text":"The cafe near my house has the best coffee.","label":2}
+{"text":"Playing chess online with a friend.","label":2}
+{"text":"Laundry is done, time to relax.","label":2}
+{"text":"Feeling happy after finishing a creative project.","label":2}
+{"text":"The movie was boring, not worth my time.","label":2}
+{"text":"Bought a new backpack for school, looks cool.","label":2}
+{"text":"Feeling tired but accomplished after cleaning the garage.","label":2}
+{"text":"I'm completely lost in my advanced biochemistry course and the final is next week.","label":0}
+{"text":"The amount of research I need to compile for this paper is giving me panic attacks.","label":0}
+{"text":"I feel like I'm going to have a breakdown from all this academic pressure.","label":0}
+{"text":"My grade in this class is teetering on the edge of failure.","label":0}
+{"text":"I've never felt more incompetent than in this graduate seminar.","label":0}
+{"text":"I can't take this anymore, I'm going to end it tonight.","label":1}
+{"text":"The world is too heavy, I just want to sleep forever.","label":1}
+{"text":"I've been staring at these razor blades for an hour.","label":1}
+{"text":"There's no hope left for me, only one way out.","label":1}
+{"text":"I'm a burden to everyone and they'd be relieved if I was gone.","label":1}
+{"text":"What's the best way to cook salmon?","label":2}
+{"text":"I think I left my umbrella at the restaurant.","label":2}
+{"text":"The new park downtown is really lovely.","label":2}
+{"text":"meeting at 3 pm","label":2}
+{"text":"I'm considering adopting a cat from the shelter.","label":2}
+{"text":"This new recipe I tried turned out great!","label":2}
+{"text":"The software update requires a restart.","label":2}
+{"text":"grocery run","label":2}
+{"text":"I'm so happy for my sister's engagement.","label":2}
+{"text":"The museum has a new exhibit opening Friday.","label":2}
+{"text":"I'm drowning in deadlines and don't know how I'll survive the semester.","label":0}
+{"text":"My fear of public speaking is going to ruin my presentation grade.","label":0}
+{"text":"I spent all night studying and still failed the quiz.","label":0}
+{"text":"The competition for internships is making me hopeless about my future.","label":0}
+{"text":"I'm so stressed about my grades that I can't eat or sleep properly.","label":0}
+{"text":"I've decided this is my last day alive.","label":1}
+{"text":"The pain is too much, I'm going to jump.","label":1}
+{"text":"I don't want to wake up tomorrow morning.","label":1}
+{"text":"I have nothing left to live for.","label":1}
+{"text":"I'm going to tie the rope and finally be free.","label":1}
+{"text":"Can you recommend a good Italian restaurant?","label":2}
+{"text":"My houseplants are thriving this spring.","label":2}
+{"text":"I need to renew my driver's license soon.","label":2}
+{"text":"lunch with Alex","label":2}
+{"text":"The graphics in that new game are incredible.","label":2}
+{"text":"I finished that series I was watching, it had a great ending.","label":2}
+{"text":"The farmer's market has the best fresh produce.","label":2}
+{"text":"package delivered","label":2}
+{"text":"I feel so refreshed after that walk in nature.","label":2}
+{"text":"What's the capital of Canada?","label":2}
+{"text":"Waiting for the bus, it's taking forever.","label":2}
+{"text":"Just baked some cookies, smells amazing!","label":2}
+{"text":"My internet connection keeps dropping.","label":2}
+{"text":"Going for a swim later to relax.","label":2}
+{"text":"My favorite show just released a new episode.","label":2}
+{"text":"Feeling sleepy but happy after a long day.","label":2}
+{"text":"Got a new haircut, looks fresh!","label":2}
+{"text":"Trying to fix my bike tire, hope it works.","label":2}
+{"text":"Bought tickets for the theater play this weekend.","label":2}
+{"text":"Went hiking today, very tiring but fun.","label":2}
+{"text":"My friend lent me a book, looking forward to reading it.","label":2}
+{"text":"Feeling lazy today, might just stay in bed.","label":2}
+{"text":"The weather is perfect for a picnic.","label":2}
+{"text":"My phone is acting up, need to restart it.","label":2}
+{"text":"Just finished a painting, feeling proud.","label":2}
+{"text":"Going shopping later for some new clothes.","label":2}
+{"text":"My coffee spilled this morning, what a mess.","label":2}
+{"text":"Learning a new language online, it's fun!","label":2}
+{"text":"Feeling nervous before giving a speech.","label":2}
+{"text":"The park looks beautiful after the rain.","label":2}
+{"text":"I'm worried I won't graduate on time because I failed a required course.","label":0}
+{"text":"My professor's feedback on my essay was so harsh it made me doubt my abilities.","label":0}
+{"text":"I have to choose between studying for my exam or completing my major project.","label":0}
+{"text":"The financial stress of tuition is making it impossible to focus on my studies.","label":0}
+{"text":"I feel completely isolated and overwhelmed by my academic workload.","label":0}
+{"text":"I see no future for myself and have decided to end the pain permanently.","label":1}
+{"text":"I've been stockpiling my prescription pills to overdose.","label":1}
+{"text":"I'm standing on the bridge right now, ready to jump.","label":1}
+{"text":"The emotional agony is unbearable; I'm going to shoot myself.","label":1}
+{"text":"I'm a complete failure and suicide is the only solution.","label":1}
+{"text":"Do you know any good hiking trails nearby?","label":2}
+{"text":"I'm planning to repaint my living room this weekend.","label":2}
+{"text":"The new bakery in town makes amazing croissants.","label":2}
+{"text":"dentist appointment","label":2}
+{"text":"I think I'll make spaghetti for dinner tonight.","label":2}
+{"text":"My favorite sports team won the championship!","label":2}
+{"text":"The library is having a book sale next week.","label":2}
+{"text":"oil change needed","label":2}
+{"text":"I feel so content and peaceful today.","label":2}
+{"text":"What's the best way to learn a new language?","label":2}
+{"text":"I'm panicking because I can't remember anything for my history final.","label":0}
+{"text":"The thought of presenting my research to the faculty terrifies me.","label":0}
+{"text":"I'm struggling to keep my GPA high enough for law school applications.","label":0}
+{"text":"My academic advisor said my course selection might set me back a semester.","label":0}
+{"text":"I've never felt more academically inadequate than in this honors program.","label":0}
+{"text":"I'm going to hang myself tonight to end this suffering.","label":1}
+{"text":"I've written my will because I plan to die by suicide.","label":1}
+{"text":"Life is meaningless and I'm going to end mine.","label":1}
+{"text":"I'm going to drive my car into a tree at high speed.","label":1}
+{"text":"I can't cope with existing anymore, I'm going to kill myself.","label":1}
+{"text":"What time does the store close?","label":2}
+{"text":"I need to buy a birthday present for my nephew.","label":2}
+{"text":"The fall colors are spectacular this year.","label":2}
+{"text":"call mom later","label":2}
+{"text":"I'm thinking about taking a pottery class.","label":2}
+{"text":"I finally fixed that leaky faucet in the kitchen.","label":2}
+{"text":"The concert tickets go on sale tomorrow morning.","label":2}
+{"text":"dry cleaning pickup","label":2}
+{"text":"I'm feeling really optimistic about my new job.","label":2}
+{"text":"How do I change the password on my account?","label":2}
+{"text":"I'm worried I won't finish my thesis on time.","label":0}
+{"text":"Life feels meaningless, I want to disappear.","label":1}
+{"text":"I love going to the beach, it makes me happy.","label":2}
+{"text":"I have a huge exam tomorrow and I can't focus.","label":0}
+{"text":"I feel like ending it all tonight.","label":1}
+{"text":"Just bought a new pair of shoes, so excited!","label":2}
+{"text":"The professor gave an impossible assignment.","label":0}
+{"text":"I'm thinking about suicide, I can't cope anymore.","label":1}
+{"text":"Reading a novel before bed, very relaxing.","label":2}
+{"text":"My group project is falling apart and I'm stressed.","label":0}
+{"text":"Everything is hopeless, I want to hurt myself.","label":1}
+{"text":"My cat is sleeping on the couch, looks so cute.","label":2}
+{"text":"I can't handle all the homework and exams.","label":0}
+{"text":"I want to end my life, I can't take it anymore.","label":1}
+{"text":"Planning a weekend trip with friends, feeling excited.","label":2}
+{"text":"The final exam is overwhelming, I feel lost.","label":0}
+{"text":"Life has no purpose, I might just disappear.","label":1}
+{"text":"Just baked some cookies, smells amazing!","label":2}
+{"text":"Struggling with my math assignment all night.","label":0}
+{"text":"I feel hopeless, thinking of harming myself.","label":1}
+{"text":"Bought tickets for a concert, can't wait!","label":2}
+{"text":"My thesis defense is coming up and I'm nervous.","label":0}
+{"text":"I keep thinking about suicide, I feel trapped.","label":1}
+{"text":"Feeling lazy today, might just stay in bed.","label":2}
+{"text":"I have too many essays due, can't handle it.","label":0}
+{"text":"I'm at the edge, I might just end my life tonight.","label":1}
+{"text":"Went hiking today, very tiring but fun.","label":2}
+{"text":"Can't concentrate on studying because of anxiety.","label":0}
+{"text":"I feel like nobody cares if I'm gone, I want to leave this world.","label":1}
+{"text":"Just finished writing in my journal.","label":2}
+{"text":"The physics problem set is impossible, I'm stressed.","label":0}
+{"text":"Everything is too much, I want to hurt myself.","label":1}
+{"text":"Watched a funny movie and laughed a lot.","label":2}
+{"text":"My programming project is overwhelming.","label":0}
+{"text":"I can't take the pain anymore, I just want it to stop.","label":1}
+{"text":"The park looks beautiful after the rain.","label":2}
+{"text":"I feel anxious about my oral presentation tomorrow.","label":0}
+{"text":"Life is unbearable, I don't see any way forward.","label":1}
+{"text":"Going for a swim later to relax.","label":2}
+{"text":"I can't finish my lab report, too much pressure.","label":0}
+{"text":"I keep thinking of ending my life tonight.","label":1}
+{"text":"Feeling happy after finishing a creative project.","label":2}
+{"text":"Struggling to balance schoolwork and personal life.","label":0}
+{"text":"I feel hopeless and want to disappear.","label":1}
+{"text":"Just planted some flowers in the garden.","label":2}
+{"text":"The term paper is impossible to finish on time.","label":0}
+{"text":"I feel like ending it all, nothing matters anymore.","label":1}
+{"text":"My friend lent me a book, looking forward to reading it.","label":2}
+{"text":"I can't keep up with all the assignments.","label":0}
+{"text":"I'm thinking about suicide, can't handle it anymore.","label":1}
+{"text":"Feeling excited about the weekend plans.","label":2}
+{"text":"I'm overwhelmed by the upcoming exam schedule.","label":0}
+{"text":"I feel like I don't want to exist anymore.","label":1}
+{"text":"Just tried a new recipe, it turned out great!","label":2}
+{"text":"My homework load is getting out of control.","label":0}
+{"text":"Sometimes I think everyone would be better off without me.","label":1}
+{"text":"Going for a bike ride later, the weather is nice.","label":2}
+{"text":"I can't solve this assignment and it's stressing me out.","label":0}
+{"text":"I keep thinking about hurting myself.","label":1}
+{"text":"Bought a new backpack today, love the color.","label":2}
+{"text":"My project deadline is tomorrow and I haven't started.","label":0}
+{"text":"I just want all this pain to end.","label":1}
+{"text":"Taking a nap before dinner, feeling tired.","label":2}
+{"text":"My research paper is too hard, I feel stuck.","label":0}
+{"text":"Nothing feels right anymore, I'm so tired of life.","label":1}
+{"text":"Watched a beautiful sunset today.","label":2}
+{"text":"I'm behind on all my coursework.","label":0}
+{"text":"I wish I could just vanish.","label":1}
+{"text":"My dog learned a new trick today!","label":2}
+{"text":"Studying all night is wearing me out.","label":0}
+{"text":"I don't want to wake up tomorrow.","label":1}
+{"text":"Made myself a cup of tea, feeling cozy.","label":2}
+{"text":"This lab report is too complicated.","label":0}
+{"text":"I feel like giving up completely.","label":1}
+{"text":"Can't wait for my package to arrive.","label":2}
+{"text":"I can't remember anything I studied.","label":0}
+{"text":"I feel empty and want to disappear.","label":1}
+{"text":"Just reorganized my desk, looks much better now.","label":2}
+{"text":"My midterm grades are terrible and I'm worried.","label":0}
+{"text":"I keep having dark thoughts I can't control.","label":1}
+{"text":"Went for a walk, the fresh air was nice.","label":2}
+{"text":"I'm scared I'll fail my final exam.","label":0}
+{"text":"I don't see any reason to continue living.","label":1}
+{"text":"Trying out a new hobby this weekend!","label":2}
+{"text":"Group project stress is making me anxious.","label":0}
+{"text":"Sometimes I just want everything to stop.","label":1}
+{"text":"Bought some snacks for movie night.","label":2}
+{"text":"I can't focus on studying no matter how hard I try.","label":0}
+{"text":"I'm thinking about ending it all, I feel done.","label":1}
+{"text":"My plants are growing really well lately.","label":2}
+{"text":"Too many assignments to finish this week.","label":0}
+{"text":"Life feels unbearable, I want to give up.","label":1}
+{"text":"Had a relaxing shower, feel refreshed.","label":2}
+{"text":"The professor assigned another long reading.","label":0}
+{"text":"I feel like I'm drowning in hopelessness.","label":1}
+{"text":"Listening to music while cleaning my room.","label":2}
+{"text":"My presentation is tomorrow and I'm terrified.","label":0}
+{"text":"I don't want to deal with anything anymore.","label":1}
+{"text":"Tried a new cafe today, the coffee was great.","label":2}
+{"text":"I'm struggling to keep up with my lecture notes.","label":0}
+{"text":"I have too many chapters to study before the exam.","label":0}
+{"text":"I feel like there's no point in continuing anymore.","label":1}
+{"text":"Going out for a walk to clear my mind.","label":2}
+{"text":"My lab assignment is due tonight and I'm panicking.","label":0}
+{"text":"Sometimes I think everyone would be better if I disappeared.","label":1}
+{"text":"Made a delicious smoothie this morning.","label":2}
+{"text":"I keep failing practice quizzes, it's stressing me out.","label":0}
+{"text":"I want to hurt myself just to stop the pain.","label":1}
+{"text":"Just bought a new notebook, excited to use it.","label":2}
+{"text":"I'm struggling to understand today's lecture.","label":0}
+{"text":"I wish I wouldn't wake up tomorrow.","label":1}
+{"text":"My friend invited me to a picnic this weekend.","label":2}
+{"text":"Studying late every night is draining me.","label":0}
+{"text":"I feel completely hopeless and want everything to end.","label":1}
+{"text":"Trying a new recipe for dinner tonight.","label":2}
+{"text":"This semester is overwhelming, too much coursework.","label":0}
+{"text":"Life feels empty, I want to stop existing.","label":1}
+{"text":"Just finished cleaning my room, feels great.","label":2}
+{"text":"I'm behind on multiple assignments and don't know what to do.","label":0}
+{"text":"I keep thinking about ending my life.","label":1}
+{"text":"Bought a new game to play tonight.","label":2}
+{"text":"My thesis advisor wants major revisions and I'm stressed.","label":0}
+{"text":"I don't see a future for myself.","label":1}
+{"text":"Enjoyed a cup of coffee while reading a book.","label":2}
+{"text":"I feel anxious about all the exams coming up.","label":0}
+{"text":"I want everything to stop, including me.","label":1}
+{"text":"The sky looks beautiful this evening.","label":2}
+{"text":"My homework is piling up and I'm overwhelmed.","label":0}
+{"text":"I feel like giving up on everything, including my life.","label":1}
+{"text":"Baked a cake today and it turned out great.","label":2}
+{"text":"I’m struggling to finish my research project.","label":0}
+{"text":"I think about harming myself almost every day.","label":1}
+{"text":"Going to try yoga later to relax.","label":2}
+{"text":"I feel so stressed about tomorrow’s quiz.","label":0}
+{"text":"I hope I disappear soon.","label":1}
+{"text":"Watched a relaxing video before bed.","label":2}
+{"text":"My professor assigned extra homework and I'm exhausted.","label":0}
+{"text":"I don’t want to live anymore, everything feels pointless.","label":1}
+{"text":"Had a nice chat with my friend today.","label":2}
+{"text":"I'm scared I won't pass this semester.","label":0}
+{"text":"I feel like I'm at the edge and might do something dangerous.","label":1}
+{"text":"Trying a new productivity app today.","label":2}
+{"text":"Studying for this exam is stressing me to my limit.","label":0}
+{"text":"I feel trapped in my own thoughts and want out.","label":1}
+{"text":"Enjoying some quiet time with music.","label":2}
+{"text":"My schedule is too packed with assignments.","label":0}
+{"text":"I can’t take the emotional pain anymore.","label":1}
+{"text":"Bought some snacks for tonight’s movie.","label":2}
+{"text":"I feel overloaded with academic responsibilities.","label":0}
+{"text":"I'm so far behind in my online course that I don't think I can catch up before the final.","label":0}
+{"text":"The pressure to get straight A's from my parents is making me physically ill.","label":0}
+{"text":"I just received a terrible grade on my midterm and now my confidence is shattered.","label":0}
+{"text":"My academic probation is giving me constant anxiety about being expelled.","label":0}
+{"text":"I feel like I'm letting my family down with my poor academic performance.","label":0}
+{"text":"I can't face another day of this pain. I'm going to end my life.","label":1}
+{"text":"I've made the decision to take my own life. Nothing matters anymore.","label":1}
+{"text":"I'm going to use a gun to kill myself. The plans are made.","label":1}
+{"text":"I feel like disappearing forever. Life is too painful to continue.","label":1}
+{"text":"I'm a complete disappointment and the only escape is suicide.","label":1}
+{"text":"What's a good book to read on a long flight?","label":2}
+{"text":"I need to remember to take the trash out tonight.","label":2}
+{"text":"The new public pool is opening next weekend.","label":2}
+{"text":"coffee with Sarah","label":2}
+{"text":"I'm trying to decide what color to paint my bedroom.","label":2}
+{"text":"I just got a great new haircut!","label":2}
+{"text":"The subway is running with delays due to signal problems.","label":2}
+{"text":"bank deposit","label":2}
+{"text":"I'm feeling really grateful for my health today.","label":2}
+{"text":"How do I get to the city center from here?","label":2}
+{"text":"I'm having a meltdown over this 20-page term paper due tomorrow.","label":0}
+{"text":"My scholarship depends on this one exam and I'm terrified of failing.","label":0}
+{"text":"The workload for my engineering degree is pushing me to my absolute limit.","label":0}
+{"text":"I feel completely burned out from non-stop studying for the MCAT.","label":0}
+{"text":"I'm so anxious about my grades that I'm having trouble breathing.","label":0}
+{"text":"I've decided to end my life. This is my final goodbye.","label":1}
+{"text":"I'm going to take a lethal dose of medication tonight.","label":1}
+{"text":"I'm standing on the rooftop, ready to end it all.","label":1}
+{"text":"The suffering is too much. I'm going to kill myself.","label":1}
+{"text":"I'm completely hopeless and have decided to commit suicide.","label":1}
+{"text":"Can you recommend a good documentary?","label":2}
+{"text":"I need to water the garden this evening.","label":2}
+{"text":"The new restaurant on Main Street has fantastic reviews.","label":2}
+{"text":"yoga class at 6","label":2}
+{"text":"I'm planning a surprise party for my best friend.","label":2}
+{"text":"I just finished a 5k run and feel amazing!","label":2}
+{"text":"The train to the airport leaves every 30 minutes.","label":2}
+{"text":"pick up prescriptions","label":2}
+{"text":"I'm so excited for my upcoming wedding.","label":2}
+{"text":"What's the best way to clean a stainless steel sink?","label":2}
+{"text":"I have three chapters left to review tonight.","label":0}
+{"text":"I feel like I’m fading away and nobody notices.","label":1}
+{"text":"Made some hot chocolate, feels comforting.","label":2}
+{"text":"My assignment requires data analysis and I’m struggling.","label":0}
+{"text":"I wish I could just stop existing.","label":1}
+{"text":"Listening to my favorite playlist right now.","label":2}
+{"text":"My group is behind schedule on our presentation.","label":0}
+{"text":"Sometimes I imagine hurting myself just to escape.","label":1}
+{"text":"Bought a new water bottle today, looks nice.","label":2}
+{"text":"I'm stressed because I can't finish my essay.","label":0}
+{"text":"I feel like there's no escape from this pain.","label":1}
+{"text":"The garden looks beautiful after watering.","label":2}
+{"text":"The midterm is coming up and I'm not prepared.","label":0}
+{"text":"I keep having thoughts about ending everything.","label":1}
+{"text":"Had a fun video call with friends.","label":2}
+{"text":"My homework load is way too heavy this week.","label":0}
+{"text":"I don't think I can go on living like this.","label":1}
+{"text":"Trying out a new workout today.","label":2}
+{"text":"I'm stressed about presenting my research findings.","label":0}
+{"text":"I feel broken inside and want to give up.","label":1}
+{"text":"Just finished cooking dinner, smells great.","label":2}
+{"text":"I can't memorize anything for this exam.","label":0}
+{"text":"I'm thinking about suicide more often lately.","label":1}
+{"text":"Watching a comedy show to relax.","label":2}
+{"text":"The professor assigned extra reading and I'm tired.","label":0}
+{"text":"I wish I could vanish without hurting anyone.","label":1}
+{"text":"Went for a morning jog, felt refreshing.","label":2}
+{"text":"My research notes are a mess and I'm panicking.","label":0}
+{"text":"I feel like everything is collapsing around me.","label":1}
+{"text":"Bought a new candle, smells amazing.","label":2}
+{"text":"I haven't started studying for tomorrow's quiz.","label":0}
+{"text":"I feel completely done with life.","label":1}
+{"text":"Trying a new restaurant later today.","label":2}
+{"text":"This project is harder than I expected.","label":0}
+{"text":"I keep imagining life without me in it.","label":1}
+{"text":"Had a relaxing cup of tea this afternoon.","label":2}
+{"text":"I can't keep up with the course material.","label":0}
+{"text":"Sometimes I want to hurt myself just to feel something.","label":1}
+{"text":"The weather is perfect for a walk.","label":2}
+{"text":"My lab partner is absent and I'm stressed.","label":0}
+{"text":"I feel like I'm drowning emotionally.","label":1}
+{"text":"Bought a small gift for my friend today.","label":2}
+{"text":"I need to memorize so many formulas by tomorrow.","label":0}
+{"text":"I don't want to be alive anymore.","label":1}
+{"text":"Relaxing with some music before bed.","label":2}
+{"text":"My professor's expectations are stressing me out.","label":0}
+{"text":"I feel so hopeless I could disappear.","label":1}
+{"text":"Just cleaned my kitchen, feels satisfying.","label":2}
+{"text":"I can't finish this assignment without help.","label":0}
+{"text":"I'm falling behind on my reading assignments.","label":0}
+{"text":"I feel like my life has no meaning anymore.","label":1}
+{"text":"Just watered my plants, they look healthy.","label":2}
+{"text":"My presentation outline is still unfinished.","label":0}
+{"text":"I keep thinking about ending everything soon.","label":1}
+{"text":"Trying a new cafe today, hope it's good.","label":2}
+{"text":"I’m stressed because I can't solve these practice problems.","label":0}
+{"text":"I feel like I want to disappear forever.","label":1}
+{"text":"Went grocery shopping, found some good deals.","label":2}
+{"text":"I need to study all night to catch up.","label":0}
+{"text":"I’m exhausted and wish I didn’t wake up tomorrow.","label":1}
+{"text":"Made a smoothie bowl for breakfast.","label":2}
+{"text":"My final project requirements are overwhelming.","label":0}
+{"text":"I feel like I'm on the edge and might break.","label":1}
+{"text":"Just enjoyed a peaceful morning walk.","label":2}
+{"text":"I have too many deadlines this week.","label":0}
+{"text":"I keep having thoughts about hurting myself.","label":1}
+{"text":"My room is finally clean, feels nice.","label":2}
+{"text":"Studying nonstop is draining all my energy.","label":0}
+{"text":"Sometimes I feel like life would be easier without me.","label":1}
+{"text":"Watching a relaxing nature video.","label":2}
+{"text":"My professor assigned another surprise quiz.","label":0}
+{"text":"I don’t want to keep living this way.","label":1}
+{"text":"Tried a new dessert recipe, turned out tasty.","label":2}
+{"text":"My exam results were terrible, I'm stressed.","label":0}
+{"text":"I feel trapped and want everything to stop.","label":1}
+{"text":"I bought some new art supplies today.","label":2}
+{"text":"I can’t finish studying before the midterm.","label":0}
+{"text":"Everything hurts emotionally and I want to give up.","label":1}
+{"text":"Doing a quick stretch before starting my day.","label":2}
+{"text":"My assignment requires coding and I’m struggling.","label":0}
+{"text":"I wish I could disappear without anyone noticing.","label":1}
+{"text":"Having a cup of coffee to relax.","label":2}
+{"text":"This course load is too heavy for me.","label":0}
+{"text":"Life feels unbearable and I'm losing hope.","label":1}
+{"text":"Listening to some calming music.","label":2}
+{"text":"I haven't started the chapter that will be on tomorrow's exam.","label":0}
+{"text":"I feel like I'm falling deeper into darkness.","label":1}
+{"text":"Did some journaling to clear my mind.","label":2}
+{"text":"My lab experiment isn’t working and I’m stressed.","label":0}
+{"text":"Sometimes I think about ending my life quietly.","label":1}
+{"text":"Went out to buy snacks for later.","label":2}
+{"text":"I have to redo my assignment completely.","label":0}
+{"text":"I feel like nothing in life will ever get better.","label":1}
+{"text":"Just finished watching a funny video.","label":2}
+{"text":"My study schedule is a mess.","label":0}
+{"text":"I don’t want to keep going anymore.","label":1}
+{"text":"Made myself a warm cup of tea.","label":2}
+{"text":"I’m anxious about tomorrow’s graded presentation.","label":0}
+{"text":"I feel like giving up on everything, including myself.","label":1}
+{"text":"I'm struggling to understand this complex mathematical proof for my analysis class.","label":0}
+{"text":"The fear of failing my bar exam is consuming all my thoughts.","label":0}
+{"text":"I have to give a speech to 200 people and I'm having panic attacks just thinking about it.","label":0}
+{"text":"My academic future feels ruined after failing that crucial exam.","label":0}
+{"text":"I'm so overwhelmed by my PhD dissertation that I can't even start writing.","label":0}
+{"text":"I'm going to end my life. I have the means and the determination.","label":1}
+{"text":"This is the last night I plan to be alive. I can't take the pain anymore.","label":1}
+{"text":"I'm going to jump from the high-rise and finally be at peace.","label":1}
+{"text":"I've decided to end my suffering by taking my own life. It's the only way.","label":1}
+{"text":"I'm completely broken and have decided to kill myself. There's no other option.","label":1}
+{"text":"What's a good recipe for chocolate chip cookies?","label":2}
+{"text":"I need to remember to buy stamps at the post office.","label":2}
+{"text":"The community garden is looking beautiful this season.","label":2}
+{"text":"movie night Friday","label":2}
+{"text":"I'm considering learning how to knit.","label":2}
+{"text":"I just got a promotion at my job!","label":2}
+{"text":"The highway is closed for construction until next month.","label":2}
+{"text":"vet appointment for the cat","label":2}
+{"text":"I'm feeling really proud of my personal growth lately.","label":2}
+{"text":"How do I reset my router?","label":2}
+{"text":"I'm terrified I'll be kicked out of my program if I fail this class.","label":0}
+{"text":"The constant pressure to excel academically is making me hate learning.","label":0}
+{"text":"I feel like I'm drowning in assignments with no hope of catching up.","label":0}
+{"text":"My entire future feels like it depends on this one research paper.","label":0}
+{"text":"I've never felt more stupid than in this advanced coding class.","label":0}
+{"text":"I'm going to end my life. The plans are final.","label":1}
+{"text":"I've chosen tonight to end my suffering for good.","label":1}
+{"text":"I'm going to use a knife to end my life. I can't go on.","label":1}
+{"text":"The despair is too much. I'm going to kill myself.","label":1}
+{"text":"I'm a total failure and have decided to commit suicide.","label":1}
+{"text":"What's the best way to remove a red wine stain?","label":2}
+{"text":"I need to return some books to the library.","label":2}
+{"text":"The new bike path along the river is now open.","label":2}
+{"text":"lunch meeting canceled","label":2}
+{"text":"I'm thinking about volunteering at the animal shelter.","label":2}
+{"text":"I just adopted a rescue dog and I'm so happy!","label":2}
+{"text":"The forecast says it might snow tomorrow.","label":2}
+{"text":"car wash needed","label":2}
+{"text":"I'm feeling incredibly loved and supported by my friends.","label":2}
+{"text":"Can you explain how a microwave works?","label":2}
+{"text":"I'm panicking because I can't grasp the concepts for my organic chemistry final.","label":0}
+{"text":"The thought of failing out of college is giving me constant nightmares.","label":0}
+{"text":"I'm so stressed about my grades that I'm getting constant migraines.","label":0}
+{"text":"My academic performance is so poor I'm considering dropping out entirely.","label":0}
+{"text":"I feel completely defeated by this impossible statistics problem set.","label":0}
+{"text":"I'm going to end my life tonight. I have nothing left to live for.","label":1}
+{"text":"I've decided to overdose on pills. I can't bear this existence anymore.","label":1}
+{"text":"I'm going to jump off the bridge. This is the only way to stop the pain.","label":1}
+{"text":"I'm going to kill myself. The suffering is too much to endure.","label":1}
+{"text":"I have a plan to end my life and I'm going through with it.","label":1}
+{"text":"What's the best way to cook a steak?","label":2}
+{"text":"I need to buy a new phone charger.","label":2}
+{"text":"The flowers in the park are starting to bloom.","label":2}
+{"text":"gym at 7 AM","label":2}
+{"text":"I'm planning a road trip for the long weekend.","label":2}
+{"text":"I just finished a great novel!","label":2}
+{"text":"The new coffee shop has excellent pastries.","label":2}
+{"text":"dentist at 3 PM","label":2}
+{"text":"I'm feeling very optimistic about the future.","label":2}
+{"text":"How do I change a tire?","label":2}
+{"text":"I'm terrified I'll lose my scholarship if my GPA drops any further.","label":0}
+{"text":"The pressure to succeed in medical school is making me physically sick.","label":0}
+{"text":"I'm having anxiety attacks every time I try to study for this exam.","label":0}
+{"text":"I feel like I'm the only one in my class who doesn't understand the material.","label":0}
+{"text":"My future career feels doomed because of my poor academic record.","label":0}
+{"text":"I'm going to end my life. I see no other way out of this despair.","label":1}
+{"text":"I've decided to take my own life. The pain is unbearable.","label":1}
+{"text":"I'm going to use a razor to end my life. I can't cope anymore.","label":1}
+{"text":"I'm going to kill myself. There's no hope left for me.","label":1}
+{"text":"I have a detailed plan to commit suicide and I'm ready to execute it.","label":1}
+{"text":"What's a good brand of running shoes?","label":2}
+{"text":"I need to pick up my dry cleaning.","label":2}
+{"text":"The sunset over the lake was breathtaking tonight.","label":2}
+{"text":"dinner with friends","label":2}
+{"text":"I'm learning how to play chess.","label":2}
+{"text":"I just got a raise at work!","label":2}
+{"text":"The train is running 15 minutes late.","label":2}
+{"text":"grocery shopping","label":2}
+{"text":"I'm feeling very content with my life right now.","label":2}
+{"text":"How do I bake a potato?","label":2}
+{"text":"I have so many projects due, I can't keep up.","label":0}
+{"text":"I feel like disappearing tonight.","label":1}
+{"text":"I just got a new phone, it's amazing!","label":2}
+{"text":"My professor gave us an extra assignment, I'm stressed.","label":0}
+{"text":"Life feels meaningless, I want to disappear.","label":1}
+{"text":"Going for a walk in the park to relax.","label":2}
+{"text":"I can't focus on my thesis anymore.","label":0}
+{"text":"I keep thinking about ending it all.","label":1}
+{"text":"Baked cookies today, they smell so good.","label":2}
+{"text":"I have a huge exam tomorrow and I haven't studied.","label":0}
+{"text":"I feel completely hopeless and want to die.","label":1}
+{"text":"Just finished watching a funny movie.","label":2}
+{"text":"My essay is due tomorrow and I haven't started it.","label":0}
+{"text":"Sometimes I feel like life isn't worth living.","label":1}
+{"text":"My dog learned a new trick today, so cute!","label":2}
+{"text":"I'm stressed about preparing for my presentation.","label":0}
+{"text":"I want to end my life, I can't take it anymore.","label":1}
+{"text":"Enjoying some ice cream on a sunny day.","label":2}
+{"text":"I can't finish my lab report, too complicated.","label":0}
+{"text":"I feel trapped and hopeless, I might harm myself.","label":1}
+{"text":"Just went jogging this morning, feels refreshing.","label":2}
+{"text":"Studying for this midterm is exhausting.","label":0}
+{"text":"I keep thinking of ending my life tonight.","label":1}
+{"text":"Bought a new book, excited to read it.","label":2}
+{"text":"My thesis advisor wants major revisions, I'm panicking.","label":0}
+{"text":"I feel like nobody would notice if I disappeared.","label":1}
+{"text":"Tried a new restaurant today, food was amazing.","label":2}
+{"text":"I can't finish my assignments before the deadline.","label":0}
+{"text":"I feel like giving up completely on life.","label":1}
+{"text":"Had a relaxing bath after a long day.","label":2}
+{"text":"The workload this semester is overwhelming.","label":0}
+{"text":"I think about suicide almost every day.","label":1}
+{"text":"Went out for coffee with a friend.","label":2}
+{"text":"I'm stressed about memorizing all these formulas.","label":0}
+{"text":"I feel like I want to disappear forever.","label":1}
+{"text":"Listening to music while cleaning my room.","label":2}
+{"text":"The midterm questions are so difficult, I'm panicking.","label":0}
+{"text":"I can't handle life anymore, I just want to vanish.","label":1}
+{"text":"Tried a new smoothie recipe today, it was tasty.","label":2}
+{"text":"My final project is taking forever to complete.","label":0}
+{"text":"I feel completely broken and hopeless.","label":1}
+{"text":"Had a fun video call with my friend today.","label":2}
+{"text":"I'm anxious about all the assignments due this week.","label":0}
+{"text":"I want to hurt myself, I can't cope anymore.","label":1}
+{"text":"Bought a new plant for my desk, looks nice.","label":2}
+{"text":"I have to study all night for the exam tomorrow.","label":0}
+{"text":"I feel like life is unbearable, I might end it.","label":1}
+{"text":"Went for a morning run, felt refreshing.","label":2}
+{"text":"My lab partner didn't show up, I'm stressed.","label":0}
+{"text":"I don't want to wake up tomorrow, I feel hopeless.","label":1}
+{"text":"Watched a beautiful sunset, very relaxing.","label":2}
+{"text":"I can't understand this programming assignment at all.","label":0}
+{"text":"I feel like everything is pointless, might disappear.","label":1}
+{"text":"Made a cup of coffee, feeling cozy.","label":2}
+{"text":"I'm panicking because I can't grasp the concepts for my organic chemistry final.","label":0}
+{"text":"The thought of failing out of college is giving me constant nightmares.","label":0}
+{"text":"I'm so stressed about my grades that I'm getting constant migraines.","label":0}
+{"text":"My academic performance is so poor I'm considering dropping out entirely.","label":0}
+{"text":"I feel completely defeated by this impossible statistics problem set.","label":0}
+{"text":"I'm going to end my life tonight. I have nothing left to live for.","label":1}
+{"text":"I've decided to overdose on pills. I can't bear this existence anymore.","label":1}
+{"text":"I'm going to jump off the bridge. This is the only way to stop the pain.","label":1}
+{"text":"I'm going to kill myself. The suffering is too much to endure.","label":1}
+{"text":"I have a plan to end my life and I'm going through with it.","label":1}
+{"text":"What's the best way to cook a steak?","label":2}
+{"text":"I need to buy a new phone charger.","label":2}
+{"text":"The flowers in the park are starting to bloom.","label":2}
+{"text":"gym at 7 AM","label":2}
+{"text":"I'm planning a road trip for the long weekend.","label":2}
+{"text":"I just finished a great novel!","label":2}
+{"text":"The new coffee shop has excellent pastries.","label":2}
+{"text":"dentist at 3 PM","label":2}
+{"text":"I'm feeling very optimistic about the future.","label":2}
+{"text":"How do I change a tire?","label":2}
+{"text":"I'm terrified I'll lose my scholarship if my GPA drops any further.","label":0}
+{"text":"The pressure to succeed in medical school is making me physically sick.","label":0}
+{"text":"I'm having anxiety attacks every time I try to study for this exam.","label":0}
+{"text":"I feel like I'm the only one in my class who doesn't understand the material.","label":0}
+{"text":"My future career feels doomed because of my poor academic record.","label":0}
+{"text":"I'm going to end my life. I see no other way out of this despair.","label":1}
+{"text":"I've decided to take my own life. The pain is unbearable.","label":1}
+{"text":"I'm going to use a razor to end my life. I can't cope anymore.","label":1}
+{"text":"I'm going to kill myself. There's no hope left for me.","label":1}
+{"text":"I have a detailed plan to commit suicide and I'm ready to execute it.","label":1}
+{"text":"What's a good brand of running shoes?","label":2}
+{"text":"I need to pick up my dry cleaning.","label":2}
+{"text":"The sunset over the lake was breathtaking tonight.","label":2}
+{"text":"dinner with friends","label":2}
+{"text":"I'm learning how to play chess.","label":2}
+{"text":"I just got a raise at work!","label":2}
+{"text":"The train is running 15 minutes late.","label":2}
+{"text":"grocery shopping","label":2}
+{"text":"I'm feeling very content with my life right now.","label":2}
+{"text":"How do I bake a potato?","label":2}
+{"text":"My homework pile keeps getting bigger and I can't manage.","label":0}
+{"text":"I feel like ending everything tonight.","label":1}
+{"text":"Just reorganized my desk and it looks great.","label":2}
+{"text":"The upcoming quiz is stressing me out so much.","label":0}
+{"text":"Nothing matters anymore, I want to give up.","label":1}
+{"text":"I bought a new hoodie, it's super comfy.","label":2}
+{"text":"Studying for finals is draining all my energy.","label":0}
+{"text":"I keep imagining ways to hurt myself.","label":1}
+{"text":"Cooking dinner now, trying a new recipe.","label":2}
+{"text":"My research paper is too complicated, I feel stuck.","label":0}
+{"text":"Sometimes I think about disappearing without a trace.","label":1}
+{"text":"Took some photos during my walk today.","label":2}
+{"text":"My professor added two more readings, I'm overwhelmed.","label":0}
+{"text":"I feel lost and wish life would just stop.","label":1}
+{"text":"Just bought new headphones, sound quality is great.","label":2}
+{"text":"I'm behind schedule on all my assignments.","label":0}
+{"text":"I don't know how much longer I can keep going.","label":1}
+{"text":"Watered my plants this morning, they're thriving.","label":2}
+{"text":"Trying to study but nothing is making sense.","label":0}
+{"text":"I feel completely hopeless and alone.","label":1}
+{"text":"Just watched a comedy show, made me laugh.","label":2}
+{"text":"I'm stressed because I haven't prepared for my exam.","label":0}
+{"text":"Every day feels heavier, I might harm myself.","label":1}
+{"text":"Made some tea to relax before bed.","label":2}
+{"text":"My group project is a mess and I'm stressed out.","label":0}
+{"text":"I wish everything would just end already.","label":1}
+{"text":"Went out to buy some snacks, feeling better.","label":2}
+{"text":"I can't stay focused on my studies today.","label":0}
+{"text":"My thoughts keep going to dark places.","label":1}
+{"text":"Trying to learn a new song on guitar.","label":2}
+{"text":"I have too many deadlines all at once.","label":0}
+{"text":"I want to disappear so nobody has to deal with me.","label":1}
+{"text":"Just cleaned my room, feels refreshing.","label":2}
+{"text":"This assignment is taking way longer than expected.","label":0}
+{"text":"I feel numb and tired of living.","label":1}
+{"text":"Bought a cup of bubble tea on my way home.","label":2}
+{"text":"I'm stressed because I haven't started studying yet.","label":0}
+{"text":"I don't see any point in continuing my life.","label":1}
+{"text":"Pet my cat today, she was so cuddly.","label":2}
+{"text":"My homework is piling up and I can't breathe.","label":0}
+{"text":"Everything feels like too much, I want out.","label":1}
+{"text":"Trying a new mobile game, it's fun.","label":2}
+{"text":"I’m scared I’ll fail my upcoming exam.","label":0}
+{"text":"I feel like there's no reason to keep living.","label":1}
+{"text":"Just made some toast, simple but tasty.","label":2}
+{"text":"My study notes are all over the place, so stressful.","label":0}
+{"text":"I keep thinking about suicide lately.","label":1}
+{"text":"Had a nice chat with my friend this afternoon.","label":2}
+{"text":"I haven't even started my revision and I'm panicking.","label":0}
+{"text":"I wish I could just stop existing.","label":1}
+{"text":"Bought a new pillow, it's super soft.","label":2}
+{"text":"My assignment instructions are so unclear and it's stressing me out.","label":0}
+{"text":"I feel like giving up on life entirely.","label":1}
+{"text":"Just finished a nice bowl of noodles.","label":2}
+{"text":"I can’t finish this chapter before tomorrow’s quiz.","label":0}
+{"text":"Sometimes I wish I wouldn't wake up.","label":1}
+{"text":"Went outside to get some fresh air.","label":2}
+{"text":"My project draft got rejected and now I'm overwhelmed.","label":0}
+{"text":"I feel like I’m drowning in sadness and want to end it.","label":1}
+{"text":"Just watched a relaxing ASMR video.","label":2}
+{"text":"I’m struggling to understand the lecture notes.","label":0}
+{"text":"I keep thinking there’s no point in living anymore.","label":1}
+{"text":"Got a new blanket, it's really cozy.","label":2}
+{"text":"I’m behind on multiple assignments and feel guilty.","label":0}
+{"text":"I feel stuck in my own thoughts and they scare me.","label":1}
+{"text":"Took a calm evening walk around the block.","label":2}
+{"text":"My midterm prep is going terribly, I'm stressed.","label":0}
+{"text":"I don’t want to exist anymore, everything hurts.","label":1}
+{"text":"Bought some fruit at the market today.","label":2}
+{"text":"I can’t memorize all these formulas in time.","label":0}
+{"text":"I feel myself slipping deeper into hopelessness.","label":1}
+{"text":"Just cleaned my kitchen, looks so neat now.","label":2}
+{"text":"Studying all night is making me exhausted.","label":0}
+{"text":"I keep imagining what it would be like if I ended everything.","label":1}
+{"text":"Had a refreshing cold drink this afternoon.","label":2}
+{"text":"My professor added more tasks and I’m overwhelmed.","label":0}
+{"text":"I don't have any desire to continue living.","label":1}
+{"text":"Listening to rain sounds while resting.","label":2}
+{"text":"I can’t finish this coding assignment on time.","label":0}
+{"text":"Life feels empty and I want to stop existing.","label":1}
+{"text":"Bought a new notebook for journaling.","label":2}
+{"text":"This semester's workload is crushing me.","label":0}
+{"text":"I feel like my pain will only end if I disappear.","label":1}
+{"text":"Making a warm drink before bed.","label":2}
+{"text":"I haven't studied at all and my exam is tomorrow.","label":0}
+{"text":"My mind won’t stop thinking about self-harm.","label":1}
+{"text":"Just took a short nap, feeling better.","label":2}
+{"text":"My research topic is too complex, I’m panicking.","label":0}
+{"text":"I feel like life has no purpose anymore.","label":1}
+{"text":"Watching a relaxing documentary right now.","label":2}
+{"text":"I'm stressed about writing this essay from scratch.","label":0}
+{"text":"Everything feels too heavy and I want to end it.","label":1}
+{"text":"Made myself some pancakes this morning.","label":2}
+{"text":"I can’t keep up with the study schedule I planned.","label":0}
+{"text":"I feel like I'm fading away and no one cares.","label":1}
+{"text":"Went grocery shopping, bought fresh veggies.","label":2}
+{"text":"My final exam revision is going terribly.","label":0}
+{"text":"I keep imagining ways I could disappear.","label":1}
+{"text":"Playing a chill playlist while relaxing.","label":2}
+{"text":"I don't see the point in going on anymore. Everything feels hopeless.","label":1}
+{"text":"I just want the pain to stop. I can't keep living like this.","label":1}
+{"text":"I've been having thoughts of harming myself to make it all end.","label":1}
+{"text":"Sometimes I think my family would be better off if I wasn't here.","label":1}
+{"text":"The darkness is consuming me and I don't know how much longer I can fight.","label":1}
+{"text":"I've been researching painless ways to die. I can't do this anymore.","label":1}
+{"text":"I feel like such a burden to everyone that disappearing seems like the only option.","label":1}
+{"text":"The void is calling me and I'm ready to answer.","label":1}
+{"text":"I don't deserve to live. I'm planning how to make that happen.","label":1}
+{"text":"I've started giving my things away because I won't be needing them much longer.","label":1}
+{"text":"I'm completely overwhelmed by my course load this semester.","label":0}
+{"text":"My professor's criticism has shattered my confidence in my writing abilities.","label":0}
+{"text":"I'm panicking because I can't keep up with the reading for my literature class.","label":0}
+{"text":"The competition for grades in my pre-med program is destroying my mental health.","label":0}
+{"text":"I'm so stressed about finals that I'm having trouble eating and sleeping.","label":0}
+{"text":"What's your favorite type of pizza topping?","label":2}
+{"text":"I need to remember to water my plants while I'm on vacation.","label":2}
+{"text":"The new hiking trail in the mountains looks challenging but fun.","label":2}
+{"text":"coffee with colleagues","label":2}
+{"text":"I'm thinking about redecorating my home office.","label":2}
+{"text":"I just finished planting my spring garden!","label":2}
+{"text":"The bus schedule changed effective yesterday.","label":2}
+{"text":"library book due","label":2}
+{"text":"I'm feeling really accomplished after completing that project.","label":2}
+{"text":"How do I make homemade bread?","label":2}
+{"text":"I'm terrified I'll fail my comprehensive exams and disappoint my entire department.","label":0}
+{"text":"The pressure to publish as a graduate student is making me question my career choice.","label":0}
+{"text":"I feel intellectually inadequate compared to everyone else in my program.","label":0}
+{"text":"My academic anxiety is so severe that I'm considering quitting my PhD.","label":0}
+{"text":"I'm drowning in research papers and can't see a way to finish my literature review.","label":0}
+{"text":"The thought of waking up tomorrow fills me with dread. I don't want to exist anymore.","label":1}
+{"text":"I've been having vivid fantasies about not being alive anymore.","label":1}
+{"text":"I'm actively making plans to end my life because the pain is too much.","label":1}
+{"text":"Sometimes I think about driving my car into a concrete barrier.","label":1}
+{"text":"I've written goodbye letters to everyone I care about.","label":1}
+{"text":"What's the best way to clean silver jewelry?","label":2}
+{"text":"I need to schedule my annual physical examination.","label":2}
+{"text":"The farmer's market has the freshest vegetables I've ever seen.","label":2}
+{"text":"team meeting at 2","label":2}
+{"text":"I'm considering taking a photography course.","label":2}
+{"text":"I just adopted a kitten from the shelter!","label":2}
+{"text":"The museum is offering free admission this weekend.","label":2}
+{"text":"car inspection due","label":2}
+{"text":"I'm feeling incredibly grateful for my supportive partner.","label":2}
+{"text":"How do I get to the nearest post office?","label":2}
+{"text":"I’m overwhelmed because I have three assignments due tomorrow.","label":0}
+{"text":"I feel like I want to vanish and never come back.","label":1}
+{"text":"Just watered my succulents, they look healthy.","label":2}
+{"text":"My study group isn’t helping and I’m falling behind.","label":0}
+{"text":"I can’t stop thinking about ending everything.","label":1}
+{"text":"I tried a new bakery today, the bread was great.","label":2}
+{"text":"My exam prep is going nowhere, I’m stressed out.","label":0}
+{"text":"Life feels too painful, I want to stop it.","label":1}
+{"text":"Took a short bike ride this morning, very refreshing.","label":2}
+{"text":"I’m anxious because I still haven’t started the project.","label":0}
+{"text":"Sometimes I think disappearing is the only option.","label":1}
+{"text":"Just bought myself a cup of iced coffee.","label":2}
+{"text":"I can’t keep up with the reading assignments anymore.","label":0}
+{"text":"I don’t want to live through another day like this.","label":1}
+{"text":"Made a small sketch in my notebook today.","label":2}
+{"text":"My professor keeps adding new tasks and I can’t handle it.","label":0}
+{"text":"I feel like giving up on everything, including myself.","label":1}
+{"text":"Got some sunlight on my balcony, it felt nice.","label":2}
+{"text":"These lecture slides are impossible to understand.","label":0}
+{"text":"I'm constantly thinking about hurting myself.","label":1}
+{"text":"Just tried a new tea flavor, it's really good.","label":2}
+{"text":"My presentation rehearsal went poorly, now I’m stressed.","label":0}
+{"text":"I feel like nothing will ever get better in my life.","label":1}
+{"text":"I cleaned my workspace today, looks much better.","label":2}
+{"text":"Studying late every night is wearing me down.","label":0}
+{"text":"I’m scared of my own thoughts lately.","label":1}
+{"text":"Played a relaxing piano playlist while cooking.","label":2}
+{"text":"I’m confused about the homework instructions.","label":0}
+{"text":"I feel completely empty and hopeless.","label":1}
+{"text":"Just bought a new mug, I love the design.","label":2}
+{"text":"I still have two chapters left to review before the exam.","label":0}
+{"text":"Sometimes I wish I could stop existing.","label":1}
+{"text":"Went for a slow walk to clear my head.","label":2}
+{"text":"My lab report is due in a few hours and I’m stuck.","label":0}
+{"text":"I don’t want to continue living like this.","label":1}
+{"text":"Enjoyed a warm shower after a long day.","label":2}
+{"text":"The group project is stressing me out because no one participates.","label":0}
+{"text":"I feel like I’m drowning in sadness.","label":1}
+{"text":"Bought myself a tiny cactus, it’s adorable.","label":2}
+{"text":"I’m not ready at all for tomorrow’s midterm.","label":0}
+{"text":"Every day feels worse than the last, I want to give up.","label":1}
+{"text":"Just finished reading a short comic online.","label":2}
+{"text":"My schedule is too packed, I can’t breathe.","label":0}
+{"text":"I keep imagining how peaceful things would be if I vanished.","label":1}
+{"text":"Having a small snack break right now.","label":2}
+{"text":"I’m stressed because I haven’t completed my revision plan.","label":0}
+{"text":"I don’t think I can keep living with this heaviness.","label":1}
+{"text":"Watching a cozy vlog while relaxing in bed.","label":2}
+{"text":"The constant thought that I'm not good enough for this program is paralyzing me.","label":0}
+{"text":"I'm having panic attacks before every single class presentation.","label":0}
+{"text":"My academic probation status is making it impossible to focus on actually learning.","label":0}
+{"text":"I feel like I'm letting down everyone who believed in me by struggling so much.","label":0}
+{"text":"The sheer volume of memorization for my anatomy final feels insurmountable.","label":0}
+{"text":"I don't want to be here anymore. The thought of disappearing is comforting.","label":1}
+{"text":"I've been standing on the platform watching the trains go by, imagining just stepping off.","label":1}
+{"text":"The emotional weight is so heavy that not existing seems like a relief.","label":1}
+{"text":"I find myself staring at the pills in my cabinet, counting them out.","label":1}
+{"text":"I've stopped making future plans because I don't believe I have a future.","label":1}
+{"text":"What's a good movie to watch on a rainy day?","label":2}
+{"text":"I need to buy a new pair of sneakers for my morning walks.","label":2}
+{"text":"The community center is hosting a free yoga class this Saturday.","label":2}
+{"text":"lunch with dad","label":2}
+{"text":"I'm thinking about trying out that new recipe for lasagna.","label":2}
+{"text":"I just finished a 1000-piece puzzle!","label":2}
+{"text":"The new update for the phone OS has some interesting features.","label":2}
+{"text":"water bill due","label":2}
+{"text":"I'm feeling really inspired after visiting the art gallery.","label":2}
+{"text":"How do I propagate a snake plant?","label":2}
+{"text":"I'm terrified that my poor performance will ruin my chances for any good internships.","label":0}
+{"text":"The feedback on my essay was so negative I don't know how to improve.","label":0}
+{"text":"I'm so far behind in my lab work that my research project is in jeopardy.","label":0}
+{"text":"The pressure to get into a top graduate school is making me miserable.","label":0}
+{"text":"I feel completely isolated and overwhelmed by the competitive atmosphere in my class.","label":0}
+{"text":"I'm making a plan to end my life. The details are becoming clearer each day.","label":1}
+{"text":"I've been having intense thoughts about what it would be like to just not wake up.","label":1}
+{"text":"I feel like a ghost already, just going through the motions until I can end it.","label":1}
+{"text":"I've been looking up the lethality of different household chemicals.","label":1}
+{"text":"I've started avoiding my friends because I don't want them to see what I'm planning.","label":1}
+{"text":"What's the best way to get rid of fruit flies?","label":2}
+{"text":"I need to remember to defrost the chicken for dinner.","label":2}
+{"text":"The public library has a great new selection of mystery novels.","label":2}
+{"text":"brunch on Sunday","label":2}
+{"text":"I'm planning to start a small herb garden on my windowsill.","label":2}
+{"text":"I just got a new record player and I'm loving it!","label":2}
+{"text":"The traffic lights on Main Street are out, causing delays.","label":2}
+{"text":"dog groomer appointment","label":2}
+{"text":"I'm feeling very peaceful after meditating this morning.","label":2}
+{"text":"How do I remove a red wine stain from a carpet?","label":2}
+{"text":"I still haven’t started writing my research summary and it's due tonight.","label":0}
+{"text":"I feel like I want to erase myself from this world.","label":1}
+{"text":"Just brewed a cup of hot chocolate, feels comforting.","label":2}
+{"text":"My study plan completely fell apart this week.","label":0}
+{"text":"I keep thinking that ending my life would solve everything.","label":1}
+{"text":"Went outside to stretch a bit, the weather was nice.","label":2}
+{"text":"I’m stressed because I can’t understand today’s lecture at all.","label":0}
+{"text":"I feel like disappearing so no one has to deal with me.","label":1}
+{"text":"Just watched a relaxing cooking video.","label":2}
+{"text":"I haven’t finished the required readings for class and it’s stressing me out.","label":0}
+{"text":"My thoughts are getting darker every day, I’m scared.","label":1}
+{"text":"Baked a small cake, it turned out pretty good.","label":2}
+{"text":"My memory feels terrible, I can’t retain anything I study.","label":0}
+{"text":"Sometimes I think stopping everything permanently is the only answer.","label":1}
+{"text":"Just fed my pets, they were so energetic.","label":2}
+{"text":"I’m overwhelmed trying to prepare for multiple exams at once.","label":0}
+{"text":"I feel completely drained and wish I could disappear.","label":1}
+{"text":"Finally organized my bookshelf today.","label":2}
+{"text":"I’m terrified I’ll fail this semester.","label":0}
+{"text":"Life feels pointless and heavy all the time.","label":1}
+{"text":"Went for a calm evening stroll around my block.","label":2}
+{"text":"My essay draft keeps getting rejected and I’m stressed.","label":0}
+{"text":"I feel like ending everything would bring peace.","label":1}
+{"text":"Just made some ramen for lunch.","label":2}
+{"text":"I’m struggling to keep up with my online classes.","label":0}
+{"text":"I’m having constant thoughts about harming myself.","label":1}
+{"text":"Bought a scented candle, smells really nice.","label":2}
+{"text":"My final project presentation terrifies me.","label":0}
+{"text":"Sometimes I wish I would stop existing altogether.","label":1}
+{"text":"Just tried a new phone wallpaper, looks good.","label":2}
+{"text":"This homework is so confusing, I don’t know what to do.","label":0}
+{"text":"I feel hopeless and stuck in my own mind.","label":1}
+{"text":"Made myself a smoothie after exercising.","label":2}
+{"text":"I have too many chapters left to study before the exam.","label":0}
+{"text":"I’m tired of living with this constant emptiness.","label":1}
+{"text":"Listening to some soft music right now.","label":2}
+{"text":"My assignment got extended but I’m still stressed about it.","label":0}
+{"text":"I keep imagining what it would be like if I just vanished.","label":1}
+{"text":"Just straightened up my desk a bit.","label":2}
+{"text":"I have a quiz soon and I don’t feel prepared at all.","label":0}
+{"text":"I feel like I can’t keep living through this pain.","label":1}
+{"text":"I bought some fresh fruit earlier, excited to eat it.","label":2}
+{"text":"My research topic is overwhelming and I don’t know where to start.","label":0}
+{"text":"Sometimes I imagine leaving everything behind permanently.","label":1}
+{"text":"Took a quick nap, feeling slightly better.","label":2}
+{"text":"I’m frustrated with how slowly I’m studying.","label":0}
+{"text":"Life feels like a burden I don’t want to carry.","label":1}
+{"text":"Just had a relaxing warm drink before bed.","label":2}
+{"text":"I'm struggling to maintain the required GPA for my honors program and it's causing me immense stress.","label":0}
+{"text":"The thought of presenting my thesis defense to the committee is giving me sleepless nights.","label":0}
+{"text":"I feel completely unprepared for my final practical exam in clinical skills.","label":0}
+{"text":"The pressure to secure a research assistant position is adding to my academic anxiety.","label":0}
+{"text":"I'm overwhelmed by the constant deadlines and expectations in my accelerated program.","label":0}
+{"text":"I see no light at the end of this tunnel. I don't think I can keep going much longer.","label":1}
+{"text":"I've been having recurring thoughts about just letting go and ending everything.","label":1}
+{"text":"The idea of suicide is becoming a comforting presence in my mind.","label":1}
+{"text":"I feel like I'm a constant disappointment and that everyone would be relieved if I was gone.","label":1}
+{"text":"I've been isolating myself because I don't want anyone to talk me out of my plans.","label":1}
+{"text":"What's your favorite type of cheese for a grilled sandwich?","label":2}
+{"text":"I need to remember to charge my wireless earbuds.","label":2}
+{"text":"The new fountain in the town square is really beautiful at night.","label":2}
+{"text":"movie with friends tonight","label":2}
+{"text":"I'm considering joining a local book club.","label":2}
+{"text":"I just finished a 5K run and beat my personal best time!","label":2}
+{"text":"The new Italian restaurant has fantastic reviews for their pasta.","label":2}
+{"text":"pharmacy pickup","label":2}
+{"text":"I'm feeling very optimistic about my new creative project.","label":2}
+{"text":"How do I change the language settings on this app?","label":2}
+{"text":"I'm terrified that my poor performance in this core class will set my entire degree back a year.","label":0}
+{"text":"The constant comparison to my more successful peers is destroying my self-esteem.","label":0}
+{"text":"I'm having trouble focusing on my studies due to overwhelming academic pressure.","label":0}
+{"text":"My fear of public speaking is going to ruin my grade for this oral presentation.","label":0}
+{"text":"I feel like I'm drowning in academic expectations with no support system.","label":0}
+{"text":"I've started to see my own life as something that needs to be ended.","label":1}
+{"text":"The thought of self-harm is the only thing that brings me any sense of control.","label":1}
+{"text":"I've been looking at old photos and crying because I don't recognize that happy person anymore.","label":1}
+{"text":"I feel like I'm already dead inside, just waiting for my body to catch up.","label":1}
+{"text":"I've been practicing how I would say goodbye to people in my head.","label":1}
+{"text":"What's the best way to clean a cast iron skillet?","label":2}
+{"text":"I need to pick up a birthday card for my sister.","label":2}
+{"text":"The autumn leaves are particularly vibrant this year.","label":2}
+{"text":"coffee meeting at 10","label":2}
+{"text":"I'm thinking about learning how to play the ukulele.","label":2}
+{"text":"I just got a great new job offer!","label":2}
+{"text":"The subway system will be undergoing maintenance this weekend.","label":2}
+{"text":"grocery delivery","label":2}
+{"text":"I'm feeling incredibly loved and supported by my community.","label":2}
+{"text":"How do I set up a voicemail greeting on my new phone?","label":2}
+{"text":"I’m stressed because my exam is in two days and I haven't reviewed anything.","label":0}
+{"text":"I feel like I’m slowly giving up on living.","label":1}
+{"text":"Just finished watching a travel vlog, really calming.","label":2}
+{"text":"My homework is so difficult I don’t know where to begin.","label":0}
+{"text":"I keep thinking about disappearing permanently.","label":1}
+{"text":"Bought some snacks for a late-night movie.","label":2}
+{"text":"I’m panicking because my assignment deadline is too close.","label":0}
+{"text":"I feel like nothing matters and I want to stop existing.","label":1}
+{"text":"Just took a deep breath outside, felt refreshing.","label":2}
+{"text":"I’m falling behind in every subject this week.","label":0}
+{"text":"Every thought I have lately leads to wanting to end it.","label":1}
+{"text":"Just cleaned up my phone storage, feels organized.","label":2}
+{"text":"My lab results are incorrect and I don’t know why.","label":0}
+{"text":"I feel like life is slipping away and I don't care anymore.","label":1}
+{"text":"Made myself a small fruit bowl.","label":2}
+{"text":"Studying all day is making me extremely tired.","label":0}
+{"text":"I can’t escape the thought of harming myself.","label":1}
+{"text":"Watching people bake online, it's relaxing.","label":2}
+{"text":"My grades dropped and I’m terrified.","label":0}
+{"text":"Life feels overwhelming and I want it to stop.","label":1}
+{"text":"Just organized my clothes drawer.","label":2}
+{"text":"I’m struggling to keep up with online lectures.","label":0}
+{"text":"I feel like disappearing so nobody has to deal with me.","label":1}
+{"text":"I treated myself to a small dessert today.","label":2}
+{"text":"My project requires coding and I can’t figure it out.","label":0}
+{"text":"Sometimes I imagine what it would be like if I ended things.","label":1}
+{"text":"Just scrolling through social media casually.","label":2}
+{"text":"I have no idea how to prepare for this midterm.","label":0}
+{"text":"I don’t think I can handle life anymore.","label":1}
+{"text":"Had a warm bowl of soup for dinner.","label":2}
+{"text":"My study materials are so messy I can't focus.","label":0}
+{"text":"Everything in my life feels empty and pointless.","label":1}
+{"text":"Just wrote in my journal for a bit.","label":2}
+{"text":"I’m falling behind on lectures and assignments.","label":0}
+{"text":"I feel like I’m drowning and want to stop existing.","label":1}
+{"text":"Made myself a cup of hot tea this evening.","label":2}
+{"text":"This semester feels impossible to get through.","label":0}
+{"text":"I keep having urges to harm myself, it scares me.","label":1}
+{"text":"Just took a quiet moment to rest.","label":2}
+{"text":"I’m struggling to write my research introduction.","label":0}
+{"text":"I feel like life is too heavy for me to continue.","label":1}
+{"text":"Opened the window for some fresh air.","label":2}
+{"text":"My exam preparation isn’t going well and I’m stressed.","label":0}
+{"text":"I have thoughts of suicide more often lately.","label":1}
+{"text":"Just bought some stationery items I needed.","label":2}
+{"text":"I can’t keep track of all my deadlines.","label":0}
+{"text":"I wish I could disappear quietly.","label":1}
+{"text":"Played with my dog for a few minutes today.","label":2}
+{"text":"I'm panicking because I don't understand the fundamental concepts needed for my advanced physics course.","label":0}
+{"text":"The fear of failing my nursing board exams is making it impossible to study effectively.","label":0}
+{"text":"I feel completely inadequate compared to the geniuses in my computer science program.","label":0}
+{"text":"My academic advisor warned me that my current trajectory might lead to academic dismissal.","label":0}
+{"text":"I'm so stressed about maintaining my 4.0 GPA that I'm experiencing physical symptoms of anxiety.","label":0}
+{"text":"I've started to believe that the world would genuinely be a better place without me in it.","label":1}
+{"text":"The thought of not waking up tomorrow is the only thing that brings me peace anymore.","label":1}
+{"text":"I've been having detailed fantasies about different methods of ending my life.","label":1}
+{"text":"I feel like a black hole of negativity and that I'm poisoning everyone around me.","label":1}
+{"text":"I've begun to see my own existence as a mistake that needs to be corrected.","label":1}
+{"text":"What's a good brand of coffee beans for a French press?","label":2}
+{"text":"I need to remember to mail this package before the post office closes.","label":2}
+{"text":"The new sculpture in the park is quite controversial but interesting.","label":2}
+{"text":"dinner reservations at 8","label":2}
+{"text":"I'm planning to start a small container garden on my balcony.","label":2}
+{"text":"I just finished knitting a scarf for the winter!","label":2}
+{"text":"The local theater is putting on a production of Hamlet next month.","label":2}
+{"text":"car service appointment","label":2}
+{"text":"I'm feeling very creative and inspired today.","label":2}
+{"text":"How do I calibrate my computer monitor for photo editing?","label":2}
+{"text":"I'm terrified that my poor writing skills will prevent me from passing my composition class.","label":0}
+{"text":"The pressure to get all A's this semester to compensate for last year's grades is overwhelming.","label":0}
+{"text":"I feel like I'm the only one in my study group who doesn't grasp the material.","label":0}
+{"text":"My academic anxiety is so severe that I'm considering switching to an easier major.","label":0}
+{"text":"I'm drowning in required readings and don't know how I'll finish my annotated bibliography.","label":0}
+{"text":"I've been having intrusive thoughts about harming myself whenever I feel stressed.","label":1}
+{"text":"The idea of suicide has shifted from a fear to a potential solution in my mind.","label":1}
+{"text":"I feel like I'm already a ghost, just waiting to make it official.","label":1}
+{"text":"I've been listening to sad music and fantasizing about my own funeral.","label":1}
+{"text":"I've started looking at my life insurance policy to see if my family would be taken care of.","label":1}
+{"text":"What's the best way to remove a coffee stain from a white shirt?","label":2}
+{"text":"I need to buy a new umbrella since mine broke in the wind.","label":2}
+{"text":"The cherry blossoms are expected to peak next week.","label":2}
+{"text":"team lunch tomorrow","label":2}
+{"text":"I'm thinking about taking a weekend trip to the coast.","label":2}
+{"text":"I just perfected my grandmother's cookie recipe!","label":2}
+{"text":"The new bike lane downtown has made cycling much safer.","label":2}
+{"text":"vet checkup for the dog","label":2}
+{"text":"I'm feeling incredibly grateful for the beautiful weather today.","label":2}
+{"text":"How do I pair my Bluetooth speaker to my laptop?","label":2}
+{"text":"I’m worried I won’t finish all my assignments on time.","label":0}
+{"text":"I feel like I should just disappear tonight.","label":1}
+{"text":"Went to the park today, the weather was perfect.","label":2}
+{"text":"I can’t understand this chapter for my exam.","label":0}
+{"text":"I feel completely hopeless and want to end it all.","label":1}
+{"text":"Bought a new backpack, it fits everything nicely.","label":2}
+{"text":"My essay is due tomorrow and I haven’t started yet.","label":0}
+{"text":"I don’t see any reason to keep going anymore.","label":1}
+{"text":"Had a relaxing cup of coffee this morning.","label":2}
+{"text":"Studying for my midterm is making me so stressed.","label":0}
+{"text":"I feel like life is too much, I just want to give up.","label":1}
+{"text":"Just watched a funny video online, made me laugh.","label":2}
+{"text":"I’m panicking because my research project isn’t done.","label":0}
+{"text":"I keep thinking about harming myself.","label":1}
+{"text":"Baked some cookies today, they turned out great.","label":2}
+{"text":"My professor gave us extra homework, I’m overwhelmed.","label":0}
+{"text":"I can’t handle life anymore, I wish I could disappear.","label":1}
+{"text":"Went for a short walk to get some fresh air.","label":2}
+{"text":"I haven’t memorized all the formulas I need for the exam.","label":0}
+{"text":"Sometimes I feel like ending my life would be easier.","label":1}
+{"text":"Bought a small plant for my desk, looks nice.","label":2}
+{"text":"I’m stressed about presenting my project next week.","label":0}
+{"text":"I feel trapped and hopeless, I might hurt myself.","label":1}
+{"text":"Just finished reading a chapter in my book.","label":2}
+{"text":"I can’t focus on studying for this exam at all.","label":0}
+{"text":"I think about disappearing every night.","label":1}
+{"text":"Made myself a smoothie this morning, tastes good.","label":2}
+{"text":"My lab report is due soon and I’m not ready.","label":0}
+{"text":"I feel so empty, I don’t want to keep living.","label":1}
+{"text":"Just organized my desk, feels much better.","label":2}
+{"text":"I’m stressed because I can’t understand the lecture notes.","label":0}
+{"text":"I feel like everything is pointless, I want to end it.","label":1}
+{"text":"Went for a bike ride, really refreshing.","label":2}
+{"text":"The final project is way harder than I expected.","label":0}
+{"text":"I want to hurt myself, I don’t care anymore.","label":1}
+{"text":"Had a nice cup of tea while relaxing.","label":2}
+{"text":"I haven’t finished my reading assignments, feeling stressed.","label":0}
+{"text":"Life feels unbearable, I can’t cope anymore.","label":1}
+{"text":"Tried a new dessert recipe, turned out tasty.","label":2}
+{"text":"I can’t concentrate on my thesis, it’s overwhelming.","label":0}
+{"text":"I keep thinking of ending it all quietly.","label":1}
+{"text":"Just played some relaxing music in the background.","label":2}
+{"text":"My homework is piling up and I’m panicking.","label":0}
+{"text":"I feel hopeless and tired of living.","label":1}
+{"text":"Went shopping for some groceries today.","label":2}
+{"text":"I’m anxious about tomorrow’s exam, not prepared at all.","label":0}
+{"text":"I sometimes want to disappear and never come back.","label":1}
+{"text":"Just tried a new tea flavor, it’s really nice.","label":2}
+{"text":"I can’t keep up with all these assignments.","label":0}
+{"text":"I feel like life is meaningless and I want to stop.","label":1}
+{"text":"Watched a funny clip online, feeling better.","label":2}
+{"text":"My study schedule is a mess, can’t focus.","label":0}
+{"text":"I think about harming myself constantly.","label":1}
+{"text":"Had a relaxing nap this afternoon.","label":2}
+{"text":"I’m stressed because the exam is so soon.","label":0}
+{"text":"I feel like I don’t want to live anymore.","label":1}
+{"text":"Made a small snack to enjoy while watching TV.","label":2}
+{"text":"I'm panicking because I don't understand the fundamental concepts needed for my advanced physics course.","label":0}
+{"text":"The fear of failing my nursing board exams is making it impossible to study effectively.","label":0}
+{"text":"I feel completely inadequate compared to the geniuses in my computer science program.","label":0}
+{"text":"My academic advisor warned me that my current trajectory might lead to academic dismissal.","label":0}
+{"text":"I'm so stressed about maintaining my 4.0 GPA that I'm experiencing physical symptoms of anxiety.","label":0}
+{"text":"I've started to believe that the world would genuinely be a better place without me in it.","label":1}
+{"text":"The thought of not waking up tomorrow is the only thing that brings me peace anymore.","label":1}
+{"text":"I've been having detailed fantasies about different methods of ending my life.","label":1}
+{"text":"I feel like a black hole of negativity and that I'm poisoning everyone around me.","label":1}
+{"text":"I've begun to see my own existence as a mistake that needs to be corrected.","label":1}
+{"text":"What's a good brand of coffee beans for a French press?","label":2}
+{"text":"I need to remember to mail this package before the post office closes.","label":2}
+{"text":"The new sculpture in the park is quite controversial but interesting.","label":2}
+{"text":"dinner reservations at 8","label":2}
+{"text":"I'm planning to start a small container garden on my balcony.","label":2}
+{"text":"I just finished knitting a scarf for the winter!","label":2}
+{"text":"The local theater is putting on a production of Hamlet next month.","label":2}
+{"text":"car service appointment","label":2}
+{"text":"I'm feeling very creative and inspired today.","label":2}
+{"text":"How do I calibrate my computer monitor for photo editing?","label":2}
+{"text":"I'm terrified that my poor writing skills will prevent me from passing my composition class.","label":0}
+{"text":"The pressure to get all A's this semester to compensate for last year's grades is overwhelming.","label":0}
+{"text":"I feel like I'm the only one in my study group who doesn't grasp the material.","label":0}
+{"text":"My academic anxiety is so severe that I'm considering switching to an easier major.","label":0}
+{"text":"I'm drowning in required readings and don't know how I'll finish my annotated bibliography.","label":0}
+{"text":"I've been having intrusive thoughts about harming myself whenever I feel stressed.","label":1}
+{"text":"The idea of suicide has shifted from a fear to a potential solution in my mind.","label":1}
+{"text":"I feel like I'm already a ghost, just waiting to make it official.","label":1}
+{"text":"I've been listening to sad music and fantasizing about my own funeral.","label":1}
+{"text":"I've started looking at my life insurance policy to see if my family would be taken care of.","label":1}
+{"text":"What's the best way to remove a coffee stain from a white shirt?","label":2}
+{"text":"I need to buy a new umbrella since mine broke in the wind.","label":2}
+{"text":"The cherry blossoms are expected to peak next week.","label":2}
+{"text":"team lunch tomorrow","label":2}
+{"text":"I'm thinking about taking a weekend trip to the coast.","label":2}
+{"text":"I just perfected my grandmother's cookie recipe!","label":2}
+{"text":"The new bike lane downtown has made cycling much safer.","label":2}
+{"text":"vet checkup for the dog","label":2}
+{"text":"I'm feeling incredibly grateful for the beautiful weather today.","label":2}
+{"text":"How do I pair my Bluetooth speaker to my laptop?","label":2}
+{"text":"I’m falling behind in all my classes and I’m scared.","label":0}
+{"text":"Sometimes I think the world would be better without me.","label":1}
+{"text":"Just cleaned my room, feels a lot nicer now.","label":2}
+{"text":"My group project teammates aren’t helping at all.","label":0}
+{"text":"I can’t take the pain anymore, I want everything to stop.","label":1}
+{"text":"Going to grab a quick snack before heading out.","label":2}
+{"text":"Studying all night is making me exhausted.","label":0}
+{"text":"I don’t want to live through another day like this.","label":1}
+{"text":"Bought some fruits at the market today.","label":2}
+{"text":"I’m stressed because my research deadline is tomorrow.","label":0}
+{"text":"I feel like running away from everything forever.","label":1}
+{"text":"My friend invited me to a movie tonight.","label":2}
+{"text":"I have three exams next week and no time to prepare.","label":0}
+{"text":"I can’t stop thinking about ending my life.","label":1}
+{"text":"Just had a cup of hot chocolate, really relaxing.","label":2}
+{"text":"My professor’s assignment is impossible to finish.","label":0}
+{"text":"Sometimes I want to hurt myself just to feel something.","label":1}
+{"text":"The sky looks beautiful this evening.","label":2}
+{"text":"I’m overwhelmed by the amount of reading I need to do.","label":0}
+{"text":"I don’t think I deserve to live anymore.","label":1}
+{"text":"Listening to my favorite music playlist.","label":2}
+{"text":"I’m terrified I’ll fail this semester.","label":0}
+{"text":"I wish I could just disappear permanently.","label":1}
+{"text":"Made myself a quick lunch earlier today.","label":2}
+{"text":"My homework is stacking up and I’m panicking.","label":0}
+{"text":"I feel numb and want to end everything.","label":1}
+{"text":"Just scrolling through social media for fun.","label":2}
+{"text":"I can’t figure out this math problem at all.","label":0}
+{"text":"I keep thinking about hurting myself tonight.","label":1}
+{"text":"Had a nice shower, feeling refreshed.","label":2}
+{"text":"This assignment is so confusing, I’m stressing out.","label":0}
+{"text":"I feel like there’s no future left for me.","label":1}
+{"text":"My dog is wagging his tail like crazy.","label":2}
+{"text":"I’m struggling to finish my coursework.","label":0}
+{"text":"I don’t want to be alive anymore.","label":1}
+{"text":"Trying a new recipe for dinner tonight.","label":2}
+{"text":"My lab exam is coming and I’m totally lost.","label":0}
+{"text":"I feel like harming myself would make everything stop.","label":1}
+{"text":"Just watered my houseplants.","label":2}
+{"text":"I’m too stressed to study properly right now.","label":0}
+{"text":"I feel worthless and don’t want to go on.","label":1}
+{"text":"Went out for a quick walk with a friend.","label":2}
+{"text":"I’m drowning in assignments this week.","label":0}
+{"text":"Sometimes I imagine what it would be like if I were gone.","label":1}
+{"text":"Watching birds outside my window.","label":2}
+{"text":"I’m scared I won’t understand anything before the test.","label":0}
+{"text":"I feel like ending my life would solve everything.","label":1}
+{"text":"Just bought some new art supplies.","label":2}
+{"text":"I’m overwhelmed by midterm preparation.","label":0}
+{"text":"I want to disappear and never come back.","label":1}
+{"text":"Made a cup of tea to relax for a bit.","label":2}
+{"text":"I'm having a complete mental block trying to write my final philosophy paper.","label":0}
+{"text":"The pressure to get into an Ivy League graduate school is making me physically ill.","label":0}
+{"text":"I feel like I'm drowning in the expectations of my prestigious academic program.","label":0}
+{"text":"My academic performance is so poor this semester that I'm considering withdrawing.","label":0}
+{"text":"I'm terrified that my learning disability will prevent me from succeeding in college.","label":0}
+{"text":"I've been having thoughts about how I would write my suicide note.","label":1}
+{"text":"The idea of self-harm is becoming a constant, comforting thought in the back of my mind.","label":1}
+{"text":"I feel like I'm a black hole, sucking the joy out of every room I enter.","label":1}
+{"text":"I've started to see my own death as an inevitable and welcome conclusion.","label":1}
+{"text":"I've been having intense urges to just drive my car off the road and end it all.","label":1}
+{"text":"What's the best way to clean a wooden cutting board?","label":2}
+{"text":"I need to remember to buy a gift for my friend's baby shower.","label":2}
+{"text":"The new public art installation downtown is really thought-provoking.","label":2}
+{"text":"brunch at 11","label":2}
+{"text":"I'm thinking about learning how to juggle.","label":2}
+{"text":"I just finished a great documentary about ocean life!","label":2}
+{"text":"The new bakery makes the best croissants I've ever tasted.","label":2}
+{"text":"haircut appointment","label":2}
+{"text":"I'm feeling very optimistic about my new business idea.","label":2}
+{"text":"How do I change the ink cartridge in my printer?","label":2}
+{"text":"I'm panicking because I can't understand the complex theories in my sociology class.","label":0}
+{"text":"The fear of public humiliation during my thesis defense is paralyzing me.","label":0}
+{"text":"I feel completely isolated and unsupported in my demanding academic environment.","label":0}
+{"text":"My academic struggles are making me question my intelligence and self-worth.","label":0}
+{"text":"I'm overwhelmed by the constant pressure to publish research as a junior faculty member.","label":0}
+{"text":"I've been having fantasies about just disappearing into the wilderness and never coming back.","label":1}
+{"text":"The thought of suicide is the only thing that makes me feel like I have any control.","label":1}
+{"text":"I feel like I'm already a ghost, just waiting to stop pretending to be alive.","label":1}
+{"text":"I've been collecting things I could use to harm myself, just in case.","label":1}
+{"text":"I've started to believe that my death would be a relief to everyone who has to deal with me.","label":1}
+{"text":"What's a good brand of running shoes for long distances?","label":2}
+{"text":"I need to remember to water my neighbor's plants while they're away.","label":2}
+{"text":"The new fountain in the plaza is a popular spot for photos.","label":2}
+{"text":"dinner with family","label":2}
+{"text":"I'm planning to start a daily journaling habit.","label":2}
+{"text":"I just got a new high score on my favorite mobile game!","label":2}
+{"text":"The new crosswalk signals are much easier to see.","label":2}
+{"text":"dog walking duty","label":2}
+{"text":"I'm feeling very content and at peace with my life.","label":2}
+{"text":"How do I reset the password on my Wi-Fi router?","label":2}
+{"text":"I can’t keep up with the coursework anymore.","label":0}
+{"text":"I feel like no one would notice if I died.","label":1}
+{"text":"Just bought a new phone case.","label":2}
+{"text":"My exam schedule is overwhelming me.","label":0}
+{"text":"I keep thinking of ways to hurt myself.","label":1}
+{"text":"Went to get some fresh air outside.","label":2}
+{"text":"I’m stressed because I haven’t started my revision.","label":0}
+{"text":"I feel like giving up on everything, even living.","label":1}
+{"text":"Played a quick game on my phone.","label":2}
+{"text":"The upcoming presentation is making me anxious.","label":0}
+{"text":"I wish I could just stop existing.","label":1}
+{"text":"Making dinner now, something simple.","label":2}
+{"text":"I’m falling behind on my study plan.","label":0}
+{"text":"Life feels too painful, and I don’t want to continue.","label":1}
+{"text":"Just finished a long walk with my dog.","label":2}
+{"text":"I’m afraid I won’t meet the graduation requirements.","label":0}
+{"text":"Everything feels empty and I want to disappear.","label":1}
+{"text":"Bought a new notebook for sketches.","label":2}
+{"text":"I’m stressed because I can’t solve these practice problems.","label":0}
+{"text":"I feel like I’m drowning and the only escape is ending it.","label":1}
+{"text":"Just cleaned my kitchen a bit.","label":2}
+{"text":"I’m having trouble keeping up with my online classes.","label":0}
+{"text":"I don’t want to wake up tomorrow.","label":1}
+{"text":"Listening to some relaxing background music.","label":2}
+{"text":"I feel pressure to perform well academically.","label":0}
+{"text":"Sometimes I think the world is better off without me.","label":1}
+{"text":"My cat keeps following me around the house.","label":2}
+{"text":"My thesis progress is way too slow and I’m panicking.","label":0}
+{"text":"I feel like I’m at my limit and want it all to end.","label":1}
+{"text":"Had a really good breakfast today.","label":2}
+{"text":"I’m struggling to memorize all this information.","label":0}
+{"text":"I can’t shake the idea of hurting myself.","label":1}
+{"text":"Just replied to some emails.","label":2}
+{"text":"I’m worried I’ll fail my final exam.","label":0}
+{"text":"I think about disappearing every single night.","label":1}
+{"text":"Went shopping for snacks earlier.","label":2}
+{"text":"I don’t understand anything from today’s lecture.","label":0}
+{"text":"I’m tired of living like this, I want to stop.","label":1}
+{"text":"Just watched a relaxing video online.","label":2}
+{"text":"My homework load is stressing me out.","label":0}
+{"text":"Sometimes I wish I’d never been born.","label":1}
+{"text":"Made myself a warm drink to relax.","label":2}
+{"text":"I’m scared because I’m failing multiple subjects.","label":0}
+{"text":"I feel like my existence has no meaning anymore.","label":1}
+{"text":"Just enjoyed a quiet moment on the balcony.","label":2}
+{"text":"Too many deadlines are making me anxious.","label":0}
+{"text":"I think people would be happier if I was gone.","label":1}
+{"text":"I’m organizing my desk while listening to music.","label":2}
+{"text":"Studying is too overwhelming for me lately.","label":0}
+{"text":"I can’t stop crying and want to end everything.","label":1}
+{"text":"Just finished eating lunch.","label":2}
+{"text":"I'm stressed because I have three chapters left to revise.","label":0}
+{"text":"I feel like giving up on my life completely.","label":1}
+{"text":"Just took a short nap, feeling a bit better.","label":2}
+{"text":"My assignment deadline is tomorrow and I’m nowhere near done.","label":0}
+{"text":"I keep imagining myself not being here anymore.","label":1}
+{"text":"Made a cup of iced coffee to stay awake.","label":2}
+{"text":"I’m overwhelmed by all the homework this week.","label":0}
+{"text":"I don’t want to keep breathing anymore.","label":1}
+{"text":"Just went outside to stretch for a bit.","label":2}
+{"text":"This semester’s workload is too much for me.","label":0}
+{"text":"Sometimes I wish I could end my life quietly.","label":1}
+{"text":"I’m watching a calming video right now.","label":2}
+{"text":"I keep falling behind on every subject.","label":0}
+{"text":"I feel like escaping life forever.","label":1}
+{"text":"Just organized some files on my laptop.","label":2}
+{"text":"Studying for finals is stressing me out so much.","label":0}
+{"text":"I feel like everything would be easier if I didn’t exist.","label":1}
+{"text":"Ate a small snack before studying again.","label":2}
+{"text":"My project is due soon and I’m not close to finishing.","label":0}
+{"text":"I can’t stop thinking about giving up completely.","label":1}
+{"text":"Just drinking water and relaxing.","label":2}
+{"text":"I’m scared I won’t pass this course.","label":0}
+{"text":"I feel like hurting myself would make the pain stop.","label":1}
+{"text":"Watching the rain from my window.","label":2}
+{"text":"I can’t manage all these assignments anymore.","label":0}
+{"text":"I don’t want to live through another day.","label":1}
+{"text":"Listening to an audio book while resting.","label":2}
+{"text":"This essay is too hard and I feel stuck.","label":0}
+{"text":"I sometimes think of ending everything.","label":1}
+{"text":"Just took a walk in the hallway.","label":2}
+{"text":"I feel overwhelmed preparing for next week’s exam.","label":0}
+{"text":"I feel useless and want to disappear.","label":1}
+{"text":"My dog is sleeping next to me.","label":2}
+{"text":"I’m worried I won’t finish my group project in time.","label":0}
+{"text":"I think about not waking up again.","label":1}
+{"text":"Just made myself something light to eat.","label":2}
+{"text":"I feel stressed because I can’t focus on studying.","label":0}
+{"text":"I feel like life doesn’t matter anymore.","label":1}
+{"text":"I’m drinking tea while relaxing on the couch.","label":2}
+{"text":"I’m panicking because exams are approaching too fast.","label":0}
+{"text":"I don’t want to exist anymore.","label":1}
+{"text":"Just cleaned up my desk a bit.","label":2}
+{"text":"I’m stressed I might not graduate on time.","label":0}
+{"text":"I wish I could simply vanish forever.","label":1}
+{"text":"Looking at some old photos for fun.","label":2}
+{"text":"I can't keep up with all these class readings.","label":0}
+{"text":"I feel like ending my life tonight.","label":1}
+{"text":"Made myself a small bowl of noodles.","label":2}
+{"text":"I'm completely stuck on my engineering capstone project and the deadline is approaching fast.","label":0}
+{"text":"The pressure to maintain my full scholarship is causing me constant, severe anxiety.","label":0}
+{"text":"I feel like I'm intellectually inferior to everyone else in my advanced mathematics class.","label":0}
+{"text":"My academic probation is a dark cloud hanging over every assignment I try to complete.","label":0}
+{"text":"I'm so stressed about my grades that I'm having trouble remembering basic information.","label":0}
+{"text":"I've started to feel like my own life is a movie I want to turn off.","label":1}
+{"text":"The thought of not existing is the only thing that brings me any sense of calm.","label":1}
+{"text":"I've been having intense urges to just step into traffic and end the constant noise in my head.","label":1}
+{"text":"I feel like I'm a burden on the planet and that my death would be a net positive.","label":1}
+{"text":"I've been looking at my life from a distance, like it's not really mine anymore.","label":1}
+{"text":"What's the best way to season a cast iron skillet?","label":2}
+{"text":"I need to remember to buy more stamps for mailing bills.","label":2}
+{"text":"The new butterfly garden at the arboretum is absolutely stunning.","label":2}
+{"text":"meeting at 4 PM","label":2}
+{"text":"I'm thinking about trying aerial yoga.","label":2}
+{"text":"I just saw a double rainbow after the storm!","label":2}
+{"text":"The new update for the photo editing app has some great new filters.","label":2}
+{"text":"plant watering reminder","label":2}
+{"text":"I'm feeling incredibly motivated to start my new fitness routine.","label":2}
+{"text":"How do I calibrate my TV's color settings?","label":2}
+{"text":"I'm terrified that my poor performance in this required course will prevent me from graduating.","label":0}
+{"text":"The constant comparison to my classmates' achievements is eroding my self-confidence.","label":0}
+{"text":"I'm having anxiety attacks every time I open my textbook to study.","label":0}
+{"text":"My fear of academic failure is so intense it's becoming a self-fulfilling prophecy.","label":0}
+{"text":"I feel completely overwhelmed by the volume of research required for my history dissertation.","label":0}
+{"text":"I've been having thoughts about what the most peaceful way to die would be.","label":1}
+{"text":"The idea of suicide has become a quiet, constant companion in my thoughts.","label":1}
+{"text":"I feel like I'm just a spectator in my own life, waiting for it to be over.","label":1}
+{"text":"I've started to feel emotionally numb, like I'm already preparing for the end.","label":1}
+{"text":"I've been having dreams where I die, and I wake up feeling disappointed to be alive.","label":1}
+{"text":"What's a good recipe for homemade pizza dough?","label":2}
+{"text":"I need to pick up my new glasses from the optometrist.","label":2}
+{"text":"The new walking path around the lake is perfect for an evening stroll.","label":2}
+{"text":"I want to end it all tonight.","label":1}
+{"text":"I want to study for my physics final.","label":0}
+{"text":"I want to buy a new car next year.","label":2}
+{"text":"I want to kill myself and be done with it.","label":1}
+{"text":"I want to improve my GPA this semester.","label":0}
+{"text":"I want to learn how to cook Italian food.","label":2}
+{"text":"I want to overdose on these pills.","label":1}
+{"text":"I want to understand calculus better.","label":0}
+{"text":"I want to start a garden in my backyard.","label":2}
+{"text":"I want to jump off this bridge.","label":1}
+{"text":"I want to complete my research paper on time.","label":0}
+{"text":"I want to train for a marathon.","label":2}
+{"text":"I want to slit my wrists and bleed out.","label":1}
+{"text":"I want to pass my chemistry midterm.","label":0}
+{"text":"I want to renovate my kitchen.","label":2}
+{"text":"I want to hang myself in the garage.","label":1}
+{"text":"I want to get into a good graduate program.","label":0}
+{"text":"I want to visit Japan someday.","label":2}
+{"text":"I want to shoot myself with a gun.","label":1}
+{"text":"I want to master organic chemistry.","label":0}
+{"text":"I want to learn a new programming language.","label":2}
+{"text":"I want to drown in the ocean.","label":1}
+{"text":"I want to prepare for the SAT exam.","label":0}
+{"text":"I want to get a promotion at work.","label":2}
+{"text":"I want to commit suicide by carbon monoxide.","label":1}
+{"text":"I want to finish my literature review by Friday.","label":0}
+{"text":"I want to build a custom computer.","label":2}
+{"text":"I want to end this unbearable pain permanently.","label":1}
+{"text":"I want to improve my essay writing skills.","label":0}
+{"text":"I want to try that new restaurant downtown.","label":2}
+{"text":"I want to take all these pills and never wake up.","label":1}
+{"text":"I want to ask my professor for an extension.","label":0}
+{"text":"I want to organize my book collection.","label":2}
+{"text":"I want to crash my car into a tree.","label":1}
+{"text":"I want to form a new study group for biology.","label":0}
+{"text":"I want to adopt a puppy from the shelter.","label":2}
+{"text":"I want to stop existing; the world would be better off.","label":1}
+{"text":"I want to check my final grades online.","label":0}
+{"text":"I want to plan a weekend hiking trip.","label":2}
+{"text":"I want to end my life because I'm a failure.","label":1}
+{"text":"I want to review my class notes before the quiz.","label":0}
+{"text":"I want to see the new movie that just came out.","label":2}
+{"text":"I want to jump in front of a moving train.","label":1}
+{"text":"I want to understand this week's lecture material.","label":0}
+{"text":"I want to rearrange the furniture in my living room.","label":2}
+{"text":"I want to harm myself with a razor blade.","label":1}
+{"text":"I want to participate more in class discussions.","label":0}
+{"text":"I want to listen to the new album from my favorite band.","label":2}
+{"text":"I want to die in my sleep and never wake up.","label":1}
+{"text":"I want to find a good tutor for statistics.","label":0}
+{"text":"I want to try a new coffee shop this morning.","label":2}
+{"text":"I want to give up on life completely.","label":1}
+{"text":"I want to submit my scholarship application.","label":0}
+{"text":"I want to learn how to play chess.","label":2}
+{"text":"I want to make the suicidal thoughts stop forever.","label":1}
+{"text":"I want to ace my final presentation tomorrow.","label":0}
+{"text":"I want to redecorate my home office.","label":2}
+{"text":"I want to end this suffering once and for all.","label":1}
+{"text":"I want to get feedback on my thesis draft.","label":0}
+{"text":"I want to try a new recipe for dinner.","label":2}
+{"text":"I want to disappear so no one has to deal with me.","label":1}
+{"text":"I want to create better study habits.","label":0}
+{"text":"I want to upgrade my phone this weekend.","label":2}
+{"text":"I want to self-harm to feel something.","label":1}
+{"text":"I want to join an academic club on campus.","label":0}
+{"text":"I want to watch the sunset at the beach.","label":2}
+{"text":"I want to end my life because nobody cares.","label":1}
+{"text":"I want to improve my note-taking during lectures.","label":0}
+{"text":"I want to clean out my garage.","label":2}
+{"text":"I want to commit suicide to escape the pain.","label":1}
+{"text":"I want to meet with my academic advisor.","label":0}
+{"text":"I want to start a vegetable garden.","label":2}
+{"text":"I want to die because I can't take it anymore.","label":1}
+{"text":"I want to prepare for my oral examination.","label":0}
+{"text":"I want to learn how to meditate.","label":2}
+{"text":"I want to end it all with a single bullet.","label":1}
+{"text":"I want to balance my coursework and part-time job.","label":0}
+{"text":"I want to go stargazing tonight.","label":2}
+{"text":"I want to overdose and end this misery.","label":1}
+{"text":"I want to understand complex mathematical proofs.","label":0}
+{"text":"I want to try a new hairstyle.","label":2}
+{"text":"I want to kill myself to make the pain stop.","label":1}
+{"text":"I want to develop better time management for school.","label":0}
+{"text":"I want to explore the local farmers market.","label":2}
+{"text":"I want to end my life; it's the only way out.","label":1}
+{"text":"I'm going to end it all tonight.","label":1}
+{"text":"I'm going to study for my physics final.","label":0}
+{"text":"I'm going to buy a new car next year.","label":2}
+{"text":"I'm going to kill myself and be done with it.","label":1}
+{"text":"I'm going to improve my GPA this semester.","label":0}
+{"text":"I'm going to learn how to cook Italian food.","label":2}
+{"text":"I'm going to overdose on these pills.","label":1}
+{"text":"I'm going to understand calculus better.","label":0}
+{"text":"I'm going to start a garden in my backyard.","label":2}
+{"text":"I'm going to jump off this bridge.","label":1}
+{"text":"I'm going to complete my research paper on time.","label":0}
+{"text":"I'm going to train for a marathon.","label":2}
+{"text":"I'm going to slit my wrists and bleed out.","label":1}
+{"text":"I'm going to pass my chemistry midterm.","label":0}
+{"text":"I'm going to renovate my kitchen.","label":2}
+{"text":"I'm going to hang myself in the garage.","label":1}
+{"text":"I'm going to get into a good graduate program.","label":0}
+{"text":"I'm going to visit Japan someday.","label":2}
+{"text":"I'm going to shoot myself with a gun.","label":1}
+{"text":"I'm going to master organic chemistry.","label":0}
+{"text":"I'm going to learn a new programming language.","label":2}
+{"text":"I'm going to drown in the ocean.","label":1}
+{"text":"I'm going to prepare for the SAT exam.","label":0}
+{"text":"I'm going to get a promotion at work.","label":2}
+{"text":"I'm going to commit suicide by carbon monoxide.","label":1}
+{"text":"I'm going to finish my literature review by Friday.","label":0}
+{"text":"I'm going to build a custom computer.","label":2}
+{"text":"I'm going to end this unbearable pain permanently.","label":1}
+{"text":"I'm going to improve my essay writing skills.","label":0}
+{"text":"I'm going to try that new restaurant downtown.","label":2}
+{"text":"I'm going to take all these pills and never wake up.","label":1}
+{"text":"I'm going to ask my professor for an extension.","label":0}
+{"text":"I'm going to organize my book collection.","label":2}
+{"text":"I'm going to crash my car into a tree.","label":1}
+{"text":"I'm going to form a new study group for biology.","label":0}
+{"text":"I'm going to adopt a puppy from the shelter.","label":2}
+{"text":"I'm going to stop existing; the world would be better off.","label":1}
+{"text":"I'm going to check my final grades online.","label":0}
+{"text":"I'm going to plan a weekend hiking trip.","label":2}
+{"text":"I'm going to end my life because I'm a failure.","label":1}
+{"text":"I'm going to review my class notes before the quiz.","label":0}
+{"text":"I'm going to see the new movie that just came out.","label":2}
+{"text":"I'm going to jump in front of a moving train.","label":1}
+{"text":"I'm going to understand this week's lecture material.","label":0}
+{"text":"I'm going to rearrange the furniture in my living room.","label":2}
+{"text":"I'm going to harm myself with a razor blade.","label":1}
+{"text":"I'm going to participate more in class discussions.","label":0}
+{"text":"I'm going to listen to the new album from my favorite band.","label":2}
+{"text":"I'm going to die in my sleep and never wake up.","label":1}
+{"text":"I'm going to find a good tutor for statistics.","label":0}
+{"text":"I'm going to try a new coffee shop this morning.","label":2}
+{"text":"I'm going to give up on life completely.","label":1}
+{"text":"I'm going to submit my scholarship application.","label":0}
+{"text":"I'm going to learn how to play chess.","label":2}
+{"text":"I'm going to make the suicidal thoughts stop forever.","label":1}
+{"text":"I'm going to ace my final presentation tomorrow.","label":0}
+{"text":"I'm going to redecorate my home office.","label":2}
+{"text":"I'm going to end this suffering once and for all.","label":1}
+{"text":"I'm going to get feedback on my thesis draft.","label":0}
+{"text":"I'm going to try a new recipe for dinner.","label":2}
+{"text":"I'm going to disappear so no one has to deal with me.","label":1}
+{"text":"I'm going to create better study habits.","label":0}
+{"text":"I'm going to upgrade my phone this weekend.","label":2}
+{"text":"I'm going to self-harm to feel something.","label":1}
+{"text":"I'm going to join an academic club on campus.","label":0}
+{"text":"I'm going to watch the sunset at the beach.","label":2}
+{"text":"I'm going to end my life because nobody cares.","label":1}
+{"text":"I'm going to improve my note-taking during lectures.","label":0}
+{"text":"I'm going to clean out my garage.","label":2}
+{"text":"I'm going to commit suicide to escape the pain.","label":1}
+{"text":"I'm going to meet with my academic advisor.","label":0}
+{"text":"I'm going to start a vegetable garden.","label":2}
+{"text":"I'm going to die because I can't take it anymore.","label":1}
+{"text":"I'm going to prepare for my oral examination.","label":0}
+{"text":"I'm going to learn how to meditate.","label":2}
+{"text":"I'm going to end it all with a single bullet.","label":1}
+{"text":"I'm going to balance my coursework and part-time job.","label":0}
+{"text":"I'm going to go stargazing tonight.","label":2}
+{"text":"I'm going to overdose and end this misery.","label":1}
+{"text":"I'm going to understand complex mathematical proofs.","label":0}
+{"text":"I'm going to try a new hairstyle.","label":2}
+{"text":"I'm going to kill myself to make the pain stop.","label":1}
+{"text":"I'm going to develop better time management for school.","label":0}
+{"text":"I'm going to explore the local farmers market.","label":2}
+{"text":"I'm going to end my life; it's the only way out.","label":1}
+{"text":"I'm going to attend all my lectures this week.","label":0}
+{"text":"I'm going to paint my bedroom a new color.","label":2}
+{"text":"I'm going to make everyone sorry by ending it all.","label":1}
+{"text":"I'm going to form a study schedule and stick to it.","label":0}
+{"text":"I'm going to bake cookies for the neighborhood.","label":2}
