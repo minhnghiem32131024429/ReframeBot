@@ -22,16 +22,16 @@ bgMusic.volume = 0.25; // 25% volume for background ambience
 
 // Music playlist
 const musicPlaylist = [
-    'Utils/Glass and Silence.mp3',
-    'Utils/Night Window.mp3',
-    'Utils/Quiet Thoughts in the Air.mp3',
-    'Utils/Ashes on the Table.mp3',
-    'Utils/A Puff Between Memories.mp3',
-    'Utils/Cat by the Fireplace.mp3',
-    'Utils/Fading Neon.mp3',
-    'Utils/Feline Silence.mp3',
-    'Utils/Grandpas Smoke.mp3',
-    'Utils/Window Glows in Amber.mp3'
+    '../Utils/Glass and Silence.mp3',
+    '../Utils/Night Window.mp3',
+    '../Utils/Quiet Thoughts in the Air.mp3',
+    '../Utils/Ashes on the Table.mp3',
+    '../Utils/A Puff Between Memories.mp3',
+    '../Utils/Cat by the Fireplace.mp3',
+    '../Utils/Fading Neon.mp3',
+    '../Utils/Feline Silence.mp3',
+    '../Utils/Grandpas Smoke.mp3',
+    '../Utils/Window Glows in Amber.mp3'
 ];
 let currentTrackIndex = 0;
 

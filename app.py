@@ -11,7 +11,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict 
-import os 
+import os
+import chromadb
+from sentence_transformers import SentenceTransformer 
 
 # --- 1. TẢI MODEL "BẢO VỆ" (Guardrail) ---
 print("--- ĐANG TẢI MODEL BẢO VỆ (Guardrail) ---")
@@ -29,6 +31,22 @@ guardrail_pipeline = pipeline(
     device=-1 # Ép chạy trên CPU, không tốn VRAM
 )
 print("--- MODEL BẢO VỆ ĐÃ SẴN SÀNG (TRÊN CPU) ---")
+
+
+# --- 1.5 TẢI RAG SYSTEM ---
+print("--- ĐANG TẢI RAG DATABASE ---")
+RAG_DB_PATH = "./rag_db"
+if not os.path.exists(RAG_DB_PATH):
+    print(f"⚠️ CẢNH BÁO: Không tìm thấy thư mục RAG '{RAG_DB_PATH}'.")
+    print("Bạn cần chạy script 'build_rag_db.py' trước để tạo database.")
+    # (Vẫn chạy tiếp, nhưng RAG sẽ không hoạt động)
+    rag_collection = None
+else:
+    rag_embedder = SentenceTransformer('all-MiniLM-L6-v2')  # Model nhúng (chạy CPU)
+    rag_client = chromadb.PersistentClient(path=RAG_DB_PATH)
+    # Đảm bảo tên collection khớp với script tạo DB của bạn (vd: "cbt_knowledge")
+    rag_collection = rag_client.get_collection(name="cbt_knowledge") 
+print("--- RAG DATABASE ĐÃ SẴN SÀNG ---")
 
 
 # --- 2. TẢI MODEL "REFRAME BOT" (LLM) ---
@@ -80,14 +98,61 @@ VIETNAMESE_HOTLINES = (
 )
 
 CRISIS_CONFIDENCE_THRESHOLD = 0.90
+ACADEMIC_KEYWORDS = [
+    "pomodoro", "cbt", "cognitive behavioral therapy", 
+    "smart goals", "mind map", "active recall", 
+    "spaced repetition", "feynman", "imposter syndrome",
+    "burnout", "distortion", "catastrophizing"
+]
+
+# --- 3.5 HÀM TRUY XUẤT KIẾN THỨC TỪ RAG ---
+def retrieve_knowledge(user_query: str, top_k: int = 3) -> str:
+    """
+    Tìm kiếm kiến thức liên quan từ RAG database
+    """
+    if rag_collection is None:
+        return "" # Trả về rỗng nếu RAG chưa load được
+
+    try:
+        # Nhúng câu hỏi của user
+        query_embedding = rag_embedder.encode([user_query]).tolist()
+        
+        # Tìm kiếm top_k đoạn văn bản tương tự nhất
+        results = rag_collection.query(
+            query_embeddings=query_embedding,
+            n_results=top_k
+        )
+        
+        # Ghép các đoạn kiến thức thành 1 chuỗi
+        if results['documents'] and len(results['documents'][0]) > 0:
+            # Lọc bớt các kết quả không liên quan (nếu cần) hoặc lấy hết
+            knowledge = "\n\n".join(results['documents'][0])
+            return knowledge
+    except Exception as e:
+        print(f"⚠️ Lỗi RAG: {e}")
+        return ""
+        
+    return ""
 
 
-# --- 4. CÁC HÀM TẠO RESPONSE (LLM) ---
+# --- 4. CÁC HÀM TẠO RESPONSE (LLM VỚI RAG) ---
 
-# HÀM 1: Dùng cho Task 1 (CBT) và Task 3 (OOS)
+# HÀM 1: Dùng cho Task 1 (CBT) và Task 3 (OOS) - CÓ RAG
 def get_response_llm(message_history: List[Dict[str, str]], task_label: str):
     
-    # --- System Prompt Động (Dynamic System Prompt) ---
+    # Lấy câu hỏi mới nhất của user
+    last_user_message = message_history[-1]['content'] if message_history else ""
+    
+    # Truy xuất kiến thức từ RAG (chỉ cho TASK_1 - CBT)
+    rag_context = ""
+    if task_label == "TASK_1" and last_user_message:
+        print(f"\n🔍 [RAG Check] Đang tìm kiến thức cho: '{last_user_message[:30]}...'")
+        rag_context = retrieve_knowledge(last_user_message, top_k=2) # Lấy 2 đoạn tốt nhất
+        if rag_context:
+            print(f"✅ [RAG Found] Đã tìm thấy {len(rag_context)} ký tự kiến thức")
+            # print(f"   -> Content: {rag_context[:50]}...") # (Bỏ comment để debug)
+    
+    # --- System Prompt Động (Dynamic System Prompt với RAG) ---
     base_system_prompt = """
 You are ReframeBot, a specialized AI assistant. Your primary goal is to help university students with academic stress using CBT Socratic questioning.
 You MUST follow these 3 rules at all times:
@@ -95,6 +160,20 @@ You MUST follow these 3 rules at all times:
 2.  **TASK 2 (CRISIS):** If the user expresses **ANY** thought of suicide... you MUST **STOP**! and redirect to a hotline.
 3.  **TASK 3 (OUT-OF-SCOPE):** If the user discusses **non-academic** topics... you MUST **STOP**! (1) Validate their feeling, then (2) Gently state your limitation and pivot back to academics.
 Do not give direct advice. Do not diagnose.
+"""
+    
+    # Thêm RAG context vào prompt nếu có
+    if rag_context:
+        base_system_prompt += f"""
+
+**KNOWLEDGE BASE REFERENCE:**
+The following information from the CBT knowledge base may help guide your response:
+
+{rag_context}
+
+Use this information to explain the concept to the student clearly. 
+You CAN define terms and explain steps if the user asks "What is...".
+However, after explaining, always try to link it back to their feelings or ask if they want to try it.
 """
     
     # Can thiệp (inject) prompt nếu "Bảo Vệ" phát hiện Task 3
@@ -134,7 +213,7 @@ Do not give direct advice. Do not diagnose.
         outputs = model.generate(
             input_ids=inputs.input_ids,
             attention_mask=inputs.attention_mask,
-            max_new_tokens=256, 
+            max_new_tokens=512, 
             eos_token_id=terminators, 
             do_sample=True,
             temperature=0.6, 
@@ -201,7 +280,7 @@ def get_crisis_empathy_llm(message_history: List[Dict[str, str]]):
 # --- 5. ĐỊNH NGHĨA ENDPOINT (LOGIC HYBRID MỚI) ---
 @app.get("/")
 def read_root():
-    return {"message": "ReframeBot API (với Hybrid Guardrail + Empathy) đang chạy!"}
+    return {"message": "ReframeBot API (với Hybrid Guardrail + Empathy + RAG) đang chạy!"}
 
 @app.post("/chat")
 def chat_endpoint(request: ChatRequest):
@@ -213,42 +292,51 @@ def chat_endpoint(request: ChatRequest):
     last_user_prompt = user_history[-1]['content']
     print(f"\n[Request] Prompt: '{last_user_prompt}'")
     
-    # 2. HỎI "BẢO VỆ" TRƯỚC (TRÊN CPU)
+    # 2. HỎI "BẢO VỆ"
     guardrail_result = guardrail_pipeline(last_user_prompt)[0]
     label = guardrail_result['label'] 
     score = guardrail_result['score']
-    
     print(f"[Guardrail Check] Label: {label} (Score: {score:.4f})")
 
-    # 3. LOGIC HYBRID
+    # <<< LOGIC MỚI: KEYWORD OVERRIDE (SỬA Ở ĐÂY) >>>
     
-    if label == "TASK_2" and score >= CRISIS_CONFIDENCE_THRESHOLD:
-        # Khủng hoảng (Tự tin cao): Gen thấu cảm + Nối hotline
+    # Kiểm tra xem có từ khóa học thuật nào không?
+    # <<< LOGIC MỚI ĐÃ SỬA: KIỂM TRA NGỮ CẢNH (CONTEXT AWARE) >>>
+    
+    # Lấy nội dung của 3 tin nhắn gần nhất (User và Bot) để kiểm tra ngữ cảnh
+    # Việc này giúp model hiểu "Yes, please" là đang nói về chủ đề trước đó
+    recent_context = ""
+    recent_messages = user_history[-3:] # Lấy 3 tin cuối
+    for msg in recent_messages:
+        recent_context += msg['content'].lower() + " "
+        
+    # Kiểm tra từ khóa trong TOÀN BỘ ngữ cảnh gần đây
+    has_academic_keyword = any(kw in recent_context for kw in ACADEMIC_KEYWORDS)
+    
+    if has_academic_keyword:
+        print(f"🔵 Keyword Override: Academic term detected. Forcing TASK_1.")
+        effective_label = "TASK_1"
+        
+    elif label == "TASK_2" and score >= CRISIS_CONFIDENCE_THRESHOLD:
+        # Khủng hoảng thật sự -> Chặn luôn
         print("🔴 Guardrail: TASK_2 (High Score) detected. Calling EMPATHY LLM...")
-        
-        # Bước 1: Gọi LLM chỉ để gen 1 câu thấu cảm
         empathy_part = get_crisis_empathy_llm(user_history)
-        
-        # Bước 2: Nối (append) hotline cứng vào
         full_response = empathy_part + "\n\n" + VIETNAMESE_HOTLINES
-        
-        print("✅ LLM Empathy Response Sent (with hotlines).")
         return {"response": full_response}
-    
-    else: 
-        # (Nếu là TASK_1, hoặc TASK_3, hoặc TASK_2 (Low Score))
         
-        # Xác định "nhãn hiệu quả"
+    elif label == "TASK_2" and score < CRISIS_CONFIDENCE_THRESHOLD:
+        # Khủng hoảng giả -> Task 3
+        print(f"🟡 Guardrail: TASK_2 (Low Score) detected. Overriding to TASK_3.")
+        effective_label = "TASK_3"
+        
+    else:
+        # Giữ nguyên nhãn của bảo vệ (Task 1 hoặc Task 3)
         effective_label = label
-        if label == "TASK_2" and score < CRISIS_CONFIDENCE_THRESHOLD:
-            # Sửa lỗi "I want to make money"
-            print(f"🟡 Guardrail: TASK_2 (Low Score) detected. Overriding to TASK_3.")
-            effective_label = "TASK_3"
-            
-        print(f"🟢 Guardrail: Effective Label={effective_label}. Calling FULL LLM...")
-        bot_response = get_response_llm(user_history, effective_label)
-        print("✅ Full LLM Response Sent.")
-        return {"response": bot_response}
+
+    # --- Gọi LLM ---
+    print(f"🟢 Guardrail: Effective Label={effective_label}. Calling FULL LLM...")
+    bot_response = get_response_llm(user_history, effective_label)
+    return {"response": bot_response}
 
 # --- 6. CHẠY SERVER ---
 if __name__ == "__main__":

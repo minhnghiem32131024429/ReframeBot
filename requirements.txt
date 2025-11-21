@@ -175,3 +175,7 @@ wrapt==1.17.3
 xxhash==3.5.0
 yarl==1.20.1
 zstandard==0.25.0
+
+# RAG dependencies
+sentence-transformers==3.3.1
+chromadb==0.5.23

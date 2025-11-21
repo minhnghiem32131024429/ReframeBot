@@ -1,0 +1,62 @@
+=== TOPIC: WHAT IS CBT ===
+Cognitive behavioral therapy (CBT) is a form of psychological treatment that has been demonstrated to be effective for a range of problems including depression, anxiety disorders, alcohol and drug use problems, marital problems, eating disorders, and severe mental illness. Numerous research studies suggest that CBT leads to significant improvement in functioning and quality of life. In many studies, CBT has been demonstrated to be as effective as, or more effective than, other forms of psychological therapy or psychiatric medications. CBT is based on several core principles, including: Psychological problems are based, in part, on faulty or unhelpful ways of thinking. Psychological problems are based, in part, on learned patterns of unhelpful behavior. People suffering from psychological problems can learn better ways of coping with them, thereby relieving their symptoms and becoming more effective in their lives.
+
+=== TOPIC: COGNITIVE DISTORTIONS ===
+1. All-or-Nothing Thinking: Also called "black-and-white thinking." You view a situation in only two categories instead of on a continuum. Example: "If I don't get an A on this exam, I am a total failure."
+2. Catastrophizing: You predict the future negatively without considering other, more likely outcomes. Example: "I failed this quiz, now I'll fail the class, drop out of college, and never get a job."
+3. Mind Reading: You believe you know what others are thinking, failing to consider other, more likely possibilities. Example: "The professor looked at me; he thinks I'm stupid."
+4. Emotional Reasoning: You think something must be true because you "feel" it strongly, ignoring evidence to the contrary. Example: "I feel like a failure, so I must be one."
+5. Should Statements: You have a rigid list of rules about how you and others should behave. Example: "I should always be productive. I shouldn't make mistakes."
+
+=== TOPIC: IMPOSTER SYNDROME ===
+Imposter Syndrome is a psychological pattern in which an individual doubts their skills, talents, or accomplishments and has a persistent internalized fear of being exposed as a "fraud." Despite external evidence of their competence, those experiencing this phenomenon remain convinced that they are frauds and do not deserve all they have achieved. It is very common among high-achieving students.
+
+=== TOPIC: THE POMODORO TECHNIQUE ===
+The Pomodoro Technique is a time management method developed by Francesco Cirillo. It uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks.
+Steps:
+1. Decide on the task to be done.
+2. Set the pomodoro timer (traditionally to 25 minutes).
+3. Work on the task until the timer rings.
+4. Take a short break (5 minutes).
+5. After four pomodoros, take a longer break (15–30 minutes).
+This technique helps reduce the anxiety of a large task by breaking it down into small, manageable chunks.
+
+=== TOPIC: THE MIND MAP TECHNIQUE ===
+The mind map technique is a visual tool for organizing information around a central topic. It is used for brainstorming, note-taking, and problem-solving.
+Steps:
+1. Start with a central idea in the center of the page.
+2. Draw main branches connecting key subtopics to the center.
+3. Add keywords and details to the branches.
+4. Use colors, images, and symbols to make it memorable.
+5. Draw connections to show relationships between ideas.
+
+=== TOPIC: ACTIVE RECALL ===
+Active recall is a study technique that involves actively retrieving information from memory rather than passively reviewing it. This strengthens neural pathways and improves long-term retention.
+Ways to use it:
+1. Use flashcards to test yourself.
+2. Close your book and try to explain the topic in your own words.
+3. Write down everything you can remember on a blank sheet of paper, then compare it with your notes.
+
+=== TOPIC: SPACED REPETITION ===
+The spaced repetition method involves reviewing information at gradually increasing intervals to move knowledge into long-term memory. It combats the "forgetting curve."
+How to implement:
+1. Use digital flashcard apps like Anki or Quizlet.
+2. Create a study timetable: Review a topic today, then in 2 days, then in 1 week, then in 1 month.
+3. Review material just before you are about to forget it.
+
+=== TOPIC: THE FEYNMAN TECHNIQUE ===
+The Feynman Technique is a method to identify gaps in your knowledge by explaining a concept simply.
+Steps:
+1. Choose a concept to study.
+2. Explain it simply (as if teaching a child), avoiding jargon.
+3. Identify where you get stuck (knowledge gaps).
+4. Go back to the source material to re-learn those parts.
+5. Simplify and refine your explanation until it is clear.
+
+=== TOPIC: SMART GOALS ===
+SMART Goals is a framework for setting clear objectives to reduce anxiety and procrastination.
+1. Specific: Define exactly what needs to be done (e.g., "Read Chapter 3").
+2. Measurable: Have a clear metric (e.g., "Complete 10 problems").
+3. Achievable: Realistic for your time and energy.
+4. Relevant: Aligns with your study goals.
+5. Time-bound: Has a specific deadline (e.g., "By 5 PM").
