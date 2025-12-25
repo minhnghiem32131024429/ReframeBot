@@ -19,7 +19,7 @@ Steps:
 3. Work on the task until the timer rings.
 4. Take a short break (5 minutes).
 5. After four pomodoros, take a longer break (15–30 minutes).
-This technique helps reduce the anxiety of a large task by breaking it down into small, manageable chunks.
+**WHEN TO USE THIS:** This technique is highly recommended for students who feel **overwhelmed**, struggle with **procrastination**, have a **short attention span**, or feel like they **cannot focus** for long periods. It helps reduce anxiety by breaking big tasks into small, manageable chunks.
 
 === TOPIC: THE MIND MAP TECHNIQUE ===
 The mind map technique is a visual tool for organizing information around a central topic. It is used for brainstorming, note-taking, and problem-solving.
@@ -29,6 +29,7 @@ Steps:
 3. Add keywords and details to the branches.
 4. Use colors, images, and symbols to make it memorable.
 5. Draw connections to show relationships between ideas.
+**WHEN TO USE THIS:** Use this when your **thoughts feel messy**, when you are **brainstorming** for an essay but don't know how to structure it, or when you have too many ideas and need to see the "big picture" to connect them.
 
 === TOPIC: ACTIVE RECALL ===
 Active recall is a study technique that involves actively retrieving information from memory rather than passively reviewing it. This strengthens neural pathways and improves long-term retention.
@@ -36,6 +37,7 @@ Ways to use it:
 1. Use flashcards to test yourself.
 2. Close your book and try to explain the topic in your own words.
 3. Write down everything you can remember on a blank sheet of paper, then compare it with your notes.
+**WHEN TO USE THIS:** Use this when you feel like you **read the book but forget everything immediately**, or when you are preparing for a test and need to **memorize definitions** or facts effectively. It is much better than just re-reading notes.
 
 === TOPIC: SPACED REPETITION ===
 The spaced repetition method involves reviewing information at gradually increasing intervals to move knowledge into long-term memory. It combats the "forgetting curve."
@@ -43,6 +45,7 @@ How to implement:
 1. Use digital flashcard apps like Anki or Quizlet.
 2. Create a study timetable: Review a topic today, then in 2 days, then in 1 week, then in 1 month.
 3. Review material just before you are about to forget it.
+**WHEN TO USE THIS:** Use this for **long-term exam preparation** (e.g., finals are in 2 months) or when you have a huge amount of vocabulary/terms to remember and you don't want to "cram" at the last minute.
 
 === TOPIC: THE FEYNMAN TECHNIQUE ===
 The Feynman Technique is a method to identify gaps in your knowledge by explaining a concept simply.
@@ -52,6 +55,7 @@ Steps:
 3. Identify where you get stuck (knowledge gaps).
 4. Go back to the source material to re-learn those parts.
 5. Simplify and refine your explanation until it is clear.
+**WHEN TO USE THIS:** Use this when you **don't really understand a complex concept** even though you've read about it. It helps when you feel confused or when you need to deepen your understanding of a difficult theory.
 
 === TOPIC: SMART GOALS ===
 SMART Goals is a framework for setting clear objectives to reduce anxiety and procrastination.
@@ -60,3 +64,4 @@ SMART Goals is a framework for setting clear objectives to reduce anxiety and pr
 3. Achievable: Realistic for your time and energy.
 4. Relevant: Aligns with your study goals.
 5. Time-bound: Has a specific deadline (e.g., "By 5 PM").
+**WHEN TO USE THIS:** Use this when you feel **paralyzed** by a huge project (like a thesis), when you don't know **where to start**, or when your to-do list feels vague and scary like "Study Math". It helps turn anxiety into action.

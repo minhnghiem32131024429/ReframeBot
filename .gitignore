@@ -39,6 +39,8 @@ build/
 /backup_*/
 /runs/
 /guardrail_model/
+/guardrail_model_1/
+/guardrail_model_retrained/
 *.log
 *.json.lock
 
