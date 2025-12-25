@@ -93,6 +93,13 @@ def main():
     set_seed(args.seed)
 
     data_path = Path(args.data)
+    if not data_path.exists():
+        raise FileNotFoundError(
+            f"Dataset not found: {data_path}. "
+            "If you intended to use the cleaned dataset, run: "
+            "python scripts\\prepare_guardrail_data.py --out data\\guardrail_dataset_clean.jsonl"
+        )
+
     rows = load_jsonl(data_path)
     if len(rows) < 50:
         raise RuntimeError(f"Too few rows in {data_path}: {len(rows)}")
