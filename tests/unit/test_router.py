@@ -7,6 +7,7 @@ import pytest
 from reframebot.router import resolve_task
 
 _THRESHOLD = 0.90  # default crisis_confidence_threshold
+_TASK2_PROB_THRESHOLD = 0.10
 
 
 def _history(*user_messages: str) -> list[dict]:
@@ -92,15 +93,29 @@ def test_guardrail_task2_high_score_trusted():
     ) == "TASK_2"
 
 
-def test_guardrail_task2_low_score_becomes_task1():
+def test_guardrail_task2_low_score_crosses_probability_threshold():
     # Low-confidence TASK_2 — ambiguous signal, respond with empathy not crisis escalation
     history = _history("I can't handle this pressure anymore")
     assert resolve_task(
         guardrail_label="TASK_2",
         guardrail_score=0.55,
+        task2_score=0.55,
+        crisis_task2_prob_threshold=_TASK2_PROB_THRESHOLD,
         crisis_confidence_threshold=_THRESHOLD,
         history=history,
-    ) == "TASK_1"
+    ) == "TASK_2"
+
+
+def test_task2_probability_threshold_catches_non_top_task2():
+    history = _history("I bought pills to overdose")
+    assert resolve_task(
+        guardrail_label="TASK_3",
+        guardrail_score=0.84,
+        task2_score=0.14,
+        crisis_task2_prob_threshold=_TASK2_PROB_THRESHOLD,
+        crisis_confidence_threshold=_THRESHOLD,
+        history=history,
+    ) == "TASK_2"
 
 
 # ---------------------------------------------------------------------------
@@ -166,11 +181,13 @@ def test_empty_history_does_not_crash():
     assert result == "TASK_3"
 
 
-def test_academic_keyword_overrides_task2():
+def test_academic_keyword_precedes_task2_probability_threshold():
     history = _history("I want to drop my course because I'm failing")
     assert resolve_task(
         guardrail_label="TASK_2",
         guardrail_score=0.93,
+        task2_score=0.93,
+        crisis_task2_prob_threshold=_TASK2_PROB_THRESHOLD,
         crisis_confidence_threshold=_THRESHOLD,
         history=history,
     ) == "TASK_1"

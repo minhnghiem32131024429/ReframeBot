@@ -28,10 +28,14 @@ def resolve_task(
     *,
     guardrail_label: str,
     guardrail_score: float,
-    crisis_confidence_threshold: float,
+    task2_score: float | None = None,
+    crisis_task2_prob_threshold: float = 0.10,
+    crisis_confidence_threshold: float = 0.90,
     history: List[Dict[str, str]],
 ) -> str:
     """Return the effective task label for the current turn."""
+    if task2_score is None:
+        task2_score = guardrail_score if guardrail_label == "TASK_2" else 0.0
 
     last_user_prompt = history[-1]["content"] if history else ""
 
@@ -61,7 +65,16 @@ def resolve_task(
         logger.debug("Route: academic keyword detected → TASK_1")
         return "TASK_1"
 
-    # --- Priority 2 & 3: Guardrail flagged TASK_2 ---
+    # --- Priority 2: Tuned TASK_2 probability threshold ---
+    if task2_score >= crisis_task2_prob_threshold:
+        logger.debug(
+            "Route: TASK_2 probability %.4f >= %.4f -> TASK_2",
+            task2_score,
+            crisis_task2_prob_threshold,
+        )
+        return "TASK_2"
+
+    # --- Priority 3 & 4: Guardrail flagged TASK_2 ---
     if guardrail_label == "TASK_2":
         if guardrail_score >= crisis_confidence_threshold:
             # High-confidence: trust the guardrail even if regex/semantic detector missed it.

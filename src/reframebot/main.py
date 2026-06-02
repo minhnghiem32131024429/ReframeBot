@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json as _json
 import logging
+import os
 from contextlib import asynccontextmanager
 from typing import Dict, Iterator, List, Optional, Tuple
 
@@ -24,7 +25,7 @@ from pydantic import BaseModel
 from reframebot.config import settings
 from reframebot.constants import VIETNAMESE_HOTLINES
 from reframebot.router import resolve_task
-from reframebot.services import guardrail, llm, rag
+from reframebot.services import guardrail, llm, rag, tracing
 
 logging.basicConfig(
     level=logging.INFO,
@@ -40,6 +41,12 @@ logger = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("=== ReframeBot startup ===")
+    logger.info(
+        "LangSmith tracing: enabled=%s project=%s api_key_set=%s",
+        tracing.enabled(settings),
+        settings.langsmith_project,
+        bool(os.environ.get("LANGSMITH_API_KEY")),
+    )
     guardrail.load(settings)
     rag.load(settings, embedder=guardrail.get_embedder())
     llm.load(settings)
@@ -69,6 +76,8 @@ app.add_middleware(
 
 class ChatRequest(BaseModel):
     history: List[Dict[str, str]]
+    username: Optional[str] = None
+    session_id: Optional[str] = None
 
 
 class ChatResponse(BaseModel):
@@ -113,11 +122,14 @@ def _resolve(
     classifier_result = guardrail.classify(guardrail_text)
     label: str = classifier_result["label"]
     score: float = classifier_result["score"]
-    logger.info("Guardrail: label=%s score=%.4f", label, score)
+    task2_score: float = classifier_result.get("task2_score", 0.0)
+    logger.info("Guardrail: label=%s score=%.4f task2_score=%.4f", label, score, task2_score)
 
     effective_label = resolve_task(
         guardrail_label=label,
         guardrail_score=score,
+        task2_score=task2_score,
+        crisis_task2_prob_threshold=settings.crisis_task2_prob_threshold,
         crisis_confidence_threshold=settings.crisis_confidence_threshold,
         history=history,
     )
@@ -125,11 +137,33 @@ def _resolve(
 
     rag_context = ""
     if effective_label == "TASK_1":
-        rag_context = rag.retrieve_knowledge(last_user_prompt, top_k=2)
+        rag_context = rag.retrieve_knowledge(last_user_prompt, top_k=settings.rag_top_k)
         if rag_context:
             logger.info("RAG: retrieved %d chars of context", len(rag_context))
 
     return effective_label, rag_context
+
+
+def _add_trace_metadata(**metadata: object) -> None:
+    tracing.add_metadata(**metadata)
+
+
+def _trace_metadata(request: ChatRequest) -> Dict[str, object]:
+    return {
+        "app_version": settings.app_version,
+        "guardrail_version": settings.guardrail_version,
+        "username": request.username or "anonymous",
+        "session_id": request.session_id or "",
+        "guardrail_path": settings.guardrail_path,
+        "crisis_task2_prob_threshold": settings.crisis_task2_prob_threshold,
+        "crisis_confidence_threshold": settings.crisis_confidence_threshold,
+        "crisis_semantic_sim_threshold": settings.crisis_semantic_sim_threshold,
+        "guardrail_context_turns": settings.guardrail_context_turns,
+        "rag_top_k": settings.rag_top_k,
+    }
+
+
+_resolve_traced = tracing.decorate(_resolve, name="reframebot_resolve", run_type="chain")
 
 
 # ---------------------------------------------------------------------------
@@ -148,13 +182,36 @@ def chat_endpoint(request: ChatRequest) -> ChatResponse:
         return ChatResponse(response="Hello! Please start the conversation.")
 
     logger.info("Request: %s", history[-1]["content"][:100])
-    effective_label, rag_context = _resolve(history)
+    trace_ctx = tracing.context(
+        settings,
+        tags=["reframebot", "chat"],
+        metadata=_trace_metadata(request),
+    )
+    with trace_ctx:
+        try:
+            effective_label, rag_context = _resolve_traced(history)
+            _add_trace_metadata(
+                effective_label=effective_label or "TASK_2",
+                rag_context_chars=len(rag_context or ""),
+                is_streaming=False,
+            )
+        except Exception as exc:
+            _add_trace_metadata(error_type=type(exc).__name__, error_message=str(exc))
+            raise
 
-    if effective_label is None or effective_label == "TASK_2":
-        empathy = llm.get_crisis_empathy(history)
-        return ChatResponse(response=f"{empathy}\n\n{VIETNAMESE_HOTLINES}")
+        if effective_label is None or effective_label == "TASK_2":
+            try:
+                empathy = llm.get_crisis_empathy(history)
+            except Exception as exc:
+                _add_trace_metadata(error_type=type(exc).__name__, error_message=str(exc))
+                raise
+            return ChatResponse(response=f"{empathy}\n\n{VIETNAMESE_HOTLINES}")
 
-    return ChatResponse(response=llm.get_response(history, effective_label, rag_context=rag_context))
+        try:
+            return ChatResponse(response=llm.get_response(history, effective_label, rag_context=rag_context))
+        except Exception as exc:
+            _add_trace_metadata(error_type=type(exc).__name__, error_message=str(exc))
+            raise
 
 
 @app.post("/chat/stream")
@@ -169,20 +226,35 @@ def chat_stream_endpoint(request: ChatRequest) -> StreamingResponse:
         return StreamingResponse(_empty(), media_type="text/event-stream")
 
     logger.info("Stream request: %s", history[-1]["content"][:100])
-    effective_label, rag_context = _resolve(history)
-
-    if effective_label is None or effective_label == "TASK_2":
-        empathy = llm.get_crisis_empathy(history)
-        full_response = f"{empathy}\n\n{VIETNAMESE_HOTLINES}"
-        def _crisis() -> Iterator[str]:
-            yield f"data: {_json.dumps({'token': full_response})}\n\n"
-            yield "data: [DONE]\n\n"
-        return StreamingResponse(_crisis(), media_type="text/event-stream")
 
     def _tokens() -> Iterator[str]:
-        for token in llm.stream_response(history, effective_label, rag_context):
-            if token:
-                yield f"data: {_json.dumps({'token': token})}\n\n"
-        yield "data: [DONE]\n\n"
+        trace_ctx = tracing.context(
+            settings,
+            tags=["reframebot", "chat-stream"],
+            metadata=_trace_metadata(request),
+        )
+
+        with trace_ctx:
+            try:
+                effective_label, rag_context = _resolve_traced(history)
+                _add_trace_metadata(
+                    effective_label=effective_label or "TASK_2",
+                    rag_context_chars=len(rag_context or ""),
+                    is_streaming=True,
+                )
+
+                if effective_label is None or effective_label == "TASK_2":
+                    empathy = llm.get_crisis_empathy(history)
+                    full_response = f"{empathy}\n\n{VIETNAMESE_HOTLINES}"
+                    yield f"data: {_json.dumps({'token': full_response})}\n\n"
+                else:
+                    for token in llm.stream_response(history, effective_label, rag_context):
+                        if token:
+                            yield f"data: {_json.dumps({'token': token})}\n\n"
+            except Exception as exc:
+                _add_trace_metadata(error_type=type(exc).__name__, error_message=str(exc))
+                raise
+            finally:
+                yield "data: [DONE]\n\n"
 
     return StreamingResponse(_tokens(), media_type="text/event-stream")

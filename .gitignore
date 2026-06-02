@@ -42,6 +42,7 @@ build/
 /guardrail_model/
 /guardrail_model_1/
 /guardrail_model_retrained/
+/guardrail_model_retrained_clean/
 *.log
 *.json.lock
 

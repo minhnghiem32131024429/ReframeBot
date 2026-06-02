@@ -32,7 +32,10 @@ services:
       start_period: 120s
 
   api:
-    image: nhatminh115/reframebot-api:latest
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+    image: reframebot-api:local
     env_file:
       - .env
     environment:
@@ -45,7 +48,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./guardrail_model_retrained/best:/models/guardrail:ro
+      - ./guardrail_model_retrained_clean/best:/models/guardrail:ro
       - ./rag_db:/app/rag_db
 
   web:

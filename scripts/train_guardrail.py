@@ -1,4 +1,5 @@
 import argparse
+import inspect
 import json
 import os
 import random
@@ -7,7 +8,7 @@ from pathlib import Path
 import numpy as np
 import torch
 from datasets import Dataset
-from sklearn.metrics import accuracy_score, f1_score, classification_report
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score
 from transformers import (
     AutoModelForSequenceClassification,
     AutoTokenizer,
@@ -144,16 +145,22 @@ def main():
         fp16=torch.cuda.is_available(),
     )
 
-    trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=train_ds,
-        eval_dataset=val_ds,
-        tokenizer=tokenizer,
-        data_collator=data_collator,
-        compute_metrics=compute_metrics_fn,
-        callbacks=[EarlyStoppingCallback(early_stopping_patience=args.patience)],
-    )
+    trainer_kwargs = {
+        "model": model,
+        "args": training_args,
+        "train_dataset": train_ds,
+        "eval_dataset": val_ds,
+        "data_collator": data_collator,
+        "compute_metrics": compute_metrics_fn,
+        "callbacks": [EarlyStoppingCallback(early_stopping_patience=args.patience)],
+    }
+    trainer_params = inspect.signature(Trainer.__init__).parameters
+    if "processing_class" in trainer_params:
+        trainer_kwargs["processing_class"] = tokenizer
+    else:
+        trainer_kwargs["tokenizer"] = tokenizer
+
+    trainer = Trainer(**trainer_kwargs)
 
     trainer.train()
 
@@ -163,6 +170,8 @@ def main():
 
     print("\n=== Validation report ===")
     print(classification_report(y_true, y_pred, target_names=[LABEL_MAP[i] for i in range(3)]))
+    print("=== Confusion matrix (rows=true, cols=pred; TASK_1,TASK_2,TASK_3) ===")
+    print(confusion_matrix(y_true, y_pred, labels=[0, 1, 2]))
 
     # Save final
     trainer.save_model(str(out_dir / "best"))

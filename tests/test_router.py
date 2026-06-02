@@ -86,18 +86,18 @@ class TestGuardrailTask2Override:
         history = _history(("user", "I want to die of embarrassment after that presentation"))
         assert route("TASK_2", 0.95, history) == "TASK_1"
 
-    def test_low_confidence_task2_becomes_task1_not_task3(self):
+    def test_low_confidence_task2_becomes_task2_not_task3(self):
         # Key regression test: previously this was incorrectly TASK_3
         history = _history(("user", "I feel really hopeless about everything"))
         result = route("TASK_2", 0.60, history)
-        assert result == "TASK_1", (
-            f"Low-confidence TASK_2 should route to TASK_1 (empathetic), got {result!r}. "
+        assert result == "TASK_2", (
+            f"TASK_2 probability above the tuned threshold should route to TASK_2, got {result!r}. "
             "Routing to TASK_3 (chit-chat) is unsafe for ambiguous distress signals."
         )
 
-    def test_task2_any_score_without_academic_keyword_becomes_task1(self):
+    def test_task2_any_score_without_academic_keyword_becomes_task2(self):
         history = _history(("user", "I feel like giving up"))
-        assert route("TASK_2", 0.75, history) == "TASK_1"
+        assert route("TASK_2", 0.75, history) == "TASK_2"
 
 
 # ---------------------------------------------------------------------------

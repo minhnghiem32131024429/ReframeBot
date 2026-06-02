@@ -1,10 +1,30 @@
 // API URL — relative paths, proxied by nginx to the api service
 // For local dev without Docker: run `python -m http.server` in web/ and keep api on :8000
-const API_URL = "http://localhost:8000/chat";
-const STREAM_URL = "http://localhost:8000/chat/stream";
+const API_URL = "/chat";
+const STREAM_URL = "/chat/stream";
 
 // Chat history
 let chatHistory = [];
+
+function getTraceIdentity() {
+    let username = localStorage.getItem('reframebot_username');
+    if (!username) {
+        username = prompt('Username for tracing?', 'minh') || 'anonymous';
+        localStorage.setItem('reframebot_username', username.trim() || 'anonymous');
+    }
+
+    let sessionId = localStorage.getItem('reframebot_session_id');
+    if (!sessionId) {
+        sessionId = (
+            window.crypto &&
+            typeof window.crypto.randomUUID === 'function' &&
+            window.crypto.randomUUID()
+        ) || `session-${Date.now()}`;
+        localStorage.setItem('reframebot_session_id', sessionId);
+    }
+
+    return { username, session_id: sessionId };
+}
 
 // DOM Elements
 const chatMessages = document.getElementById('chatMessages');
@@ -144,7 +164,7 @@ async function sendMessage() {
         const response = await fetch(STREAM_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ history: chatHistory }),
+            body: JSON.stringify({ history: chatHistory, ...getTraceIdentity() }),
         });
 
         if (!response.ok) {

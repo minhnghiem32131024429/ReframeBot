@@ -218,9 +218,38 @@ Copy `.env.example` to `.env`. Key variables:
 | `RAG_DB_PATH` | `./rag_db` | ChromaDB directory |
 | `GUARDRAIL_CONTEXT_TURNS` | `3` | Recent user turns fed to the classifier |
 | `CRISIS_CONFIDENCE_THRESHOLD` | `0.90` | Guardrail score above which TASK_2 is high-confidence |
+| `CRISIS_TASK2_PROB_THRESHOLD` | `0.10` | Tuned probability floor for routing to TASK_2 from the classifier's full probability vector |
 | `CRISIS_SEMANTIC_SIM_THRESHOLD` | `0.62` | Cosine sim threshold for semantic crisis detection |
 | `HOST` / `PORT` | `0.0.0.0` / `8000` | Server bind address |
 | `CORS_ORIGINS` | `*` | Comma-separated list of allowed origins |
+| `LANGSMITH_TRACING` | `false` | Enable LangSmith traces for `/chat` and `/chat/stream` |
+| `LANGSMITH_PROJECT` | `reframebot-dev` | LangSmith project name |
+| `LANGSMITH_API_KEY` | — | LangSmith API key |
+| `APP_VERSION` | `dev` | App version recorded in LangSmith trace metadata |
+| `GUARDRAIL_VERSION` | `local` | Guardrail version recorded in LangSmith trace metadata |
+| `RAG_TOP_K` | `2` | Number of RAG chunks retrieved for TASK_1 responses |
+
+For Docker, rebuild/restart the API after changing these values:
+
+```bash
+docker compose down
+docker compose up --build
+docker compose logs -f api
+```
+
+On startup the API logs `LangSmith tracing: enabled=... project=... api_key_set=...`.
+
+Trace anatomy:
+
+| Span | What it measures | Useful metadata |
+|---|---|---|
+| `reframebot_resolve` | crisis detector, guardrail classifier, routing, and RAG retrieval | `guardrail_path`, thresholds, username/session |
+| `llm_generate` | non-streaming response generation and crisis empathy generation | model, effective label, completion tokens, elapsed time, tokens/sec |
+| `llm_stream` | streaming vLLM response generation | model, effective label, RAG context chars, TTFT, token count, elapsed time, tokens/sec |
+
+Use `llm_stream.ttft_s` to spot first-token latency and `reframebot_resolve` to separate routing/RAG latency from generation latency.
+For local vLLM, LangSmith usage metadata records token counts and zero API cost (`total_cost=0`) because inference is self-hosted.
+LangSmith integration lives in `src/reframebot/services/tracing.py`; runtime code calls it through no-op helpers, so the app still runs normally when tracing is disabled.
 
 ### Customize Colors
 Edit `web/style.css` to change color scheme, glass effects, and more.
@@ -288,13 +317,35 @@ uv run python scripts/benchmark_inprocess.py --n 10
 
 | Metric | Score | Notes |
 |---|---|---|
-| Accuracy (out-of-domain eval set) | **88.3%** | 60 samples: 45 standard + 15 hard edge cases |
-| Accuracy (in-domain validation split) | **99.0%** | 20% stratified split, 335 samples, same synthetic source as training |
+| Accuracy (out-of-domain eval set, tuned threshold) | **98.3%** | 60 samples; `P(TASK_2) >= 0.10`, 0 TASK_2 false negatives, 1 TASK_2 false positive |
+| Accuracy (out-of-domain eval set, argmax only) | **96.7%** | Same model, no probability threshold |
+| Accuracy (in-domain validation split) | **99.0%** | 20% stratified split, same synthetic source plus curated hard cases |
 | F1 macro (in-domain validation split) | **0.99** | |
 
-Hard edge cases include: benign crisis metaphors ("dying of embarrassment"), passive suicidal ideation ("feeling like a burden to everyone"), ambiguous short inputs, Vietnamese text, and mixed academic+crisis signals. 4 of the 15 hard cases were misclassified, which is expected and informs where the model needs more training data.
+Hard edge cases include: benign crisis metaphors ("dying of embarrassment"), passive suicidal ideation ("feeling like a burden to everyone"), ambiguous short inputs, Vietnamese text, pills/overdose language, and mixed academic+crisis signals.
 
-> **Interpretation:** The 99% figure comes from a validation split drawn from the same GPT-4 synthetic source as training — it measures fit, not generalization. The 88.3% on the out-of-domain set (including hard cases) is a more realistic signal. Rerun `scripts/evaluate_model.py` after any guardrail retrain to get updated numbers.
+> **Interpretation:** The in-domain figure measures fit to the synthetic/curated training distribution. The out-of-domain set is a more realistic signal. Rerun `scripts/evaluate_model.py` or `scripts/evaluate_guardrail_classifier.py` after any guardrail retrain to get updated numbers.
+
+The current routing rule uses the classifier's full probability vector:
+
+```text
+1. Run regex + semantic crisis detector. If crisis: TASK_2.
+2. Preserve short follow-up turns inside academic context as TASK_1.
+3. Preserve academic-keyword context as TASK_1.
+4. If P(TASK_2) >= CRISIS_TASK2_PROB_THRESHOLD, route TASK_2.
+5. Otherwise use the classifier top label / legacy TASK_2 confidence logic.
+```
+
+Threshold sweep on `data/evaluation_test_data.json`:
+
+| Threshold `P(TASK_2)` | Accuracy | TASK_2 Precision | TASK_2 Recall | TASK_2 F1 | TASK_2 FN | TASK_2 FP |
+|---:|---:|---:|---:|---:|---:|---:|
+| 0.05 | 0.9667 | 0.9130 | 1.0000 | 0.9545 | 0 | 2 |
+| 0.10 | 0.9833 | 0.9545 | 1.0000 | 0.9767 | 0 | 1 |
+| 0.20 | 0.9833 | 1.0000 | 0.9524 | 0.9756 | 1 | 0 |
+| 0.30 | 0.9667 | 1.0000 | 0.9048 | 0.9500 | 2 | 0 |
+
+The selected default is `0.10`, prioritizing TASK_2 recall while keeping false positives low on the hard eval set. The generated curve is written to `reports/guardrail_threshold_sweep.png`.
 
 **LLM quality** (varies by serving mode):
 
@@ -331,7 +382,44 @@ See `train.ipynb` for the complete training pipeline:
 3. **Guardrail Training** - Task classification model
 
 Optional scripts:
+- `scripts/prepare_guardrail_data.py`: merge base guardrail data with curated hard cases and remove exact duplicates
+- `scripts/audit_guardrail_dataset.py`: inspect class balance, duplicate labels, CBT/Crisis boundary phrases, and OOS coverage
 - `scripts/train_guardrail.py`: retrain the guardrail classifier from a JSONL dataset
+- `scripts/evaluate_guardrail_classifier.py`: report confusion matrix and per-class precision/recall/F1
+- `scripts/sweep_guardrail_threshold.py`: sweep `P(TASK_2)` thresholds and write `reports/guardrail_threshold_sweep.csv/.png`
+- `scripts/push_guardrail_version.py`: upload a guardrail checkpoint to Hugging Face with a branch/tag version
+
+Guardrail retraining workflow:
+
+```bash
+python scripts/prepare_guardrail_data.py
+python scripts/audit_guardrail_dataset.py --data data/guardrail_dataset_clean.jsonl
+python scripts/train_guardrail.py --data data/guardrail_dataset_clean.jsonl --out guardrail_model_retrained_clean
+python scripts/evaluate_guardrail_classifier.py --model guardrail_model_retrained_clean/best --eval-json data/evaluation_test_data.json
+python scripts/sweep_guardrail_threshold.py --model guardrail_model_retrained_clean/best --eval-json data/evaluation_test_data.json
+```
+
+Guardrail Hugging Face versioning:
+
+```bash
+# Upload only a versioned branch/tag, leaving main unchanged.
+python scripts/push_guardrail_version.py --version v2-guardrail-clean --archive-main-as v1-guardrail-original
+
+# Promote the same checkpoint to main after reviewing the versioned branch.
+python scripts/push_guardrail_version.py --version v2-guardrail-clean --update-main
+```
+
+To pin a specific version in downstream code:
+
+```python
+from transformers import pipeline
+
+classifier = pipeline(
+    "text-classification",
+    model="Nhatminh1234/ReframeBot-Guardrail-DistilBERT",
+    revision="v2-guardrail-clean",
+)
+```
 
 ## Contributing
 

@@ -91,10 +91,22 @@ def get_embedder() -> SentenceTransformer:
 
 
 def classify(text: str) -> Dict[str, object]:
-    """Run the guardrail classifier and return label + score."""
+    """Run the guardrail classifier and return top label plus per-class scores."""
     assert _guardrail_pipeline is not None, "Call guardrail.load() first."
     result = _guardrail_pipeline(text)[0]
-    return {"label": result["label"], "score": result["score"]}
+    all_scores_raw = _guardrail_pipeline(text, top_k=None)
+    if all_scores_raw and isinstance(all_scores_raw[0], list):
+        all_scores = all_scores_raw[0]
+    else:
+        all_scores = all_scores_raw
+
+    scores = {item["label"]: float(item["score"]) for item in all_scores}
+    return {
+        "label": result["label"],
+        "score": float(result["score"]),
+        "scores": scores,
+        "task2_score": float(scores.get("TASK_2", 0.0)),
+    }
 
 
 def build_guardrail_input(

@@ -22,6 +22,7 @@ from openai import OpenAI
 
 from reframebot.config import Settings
 from reframebot.constants import ACCIDENTAL_CRISIS_TRIGGERS
+from reframebot.services import tracing
 
 logger = logging.getLogger(__name__)
 
@@ -86,6 +87,39 @@ def load(settings: Settings) -> None:
 # Internal generation helper
 # ---------------------------------------------------------------------------
 
+def _add_current_run_metadata(**metadata: object) -> None:
+    tracing.add_metadata(**metadata)
+
+
+def _add_current_run_outputs(outputs: Dict[str, object]) -> None:
+    tracing.add_outputs(outputs)
+
+
+def _set_current_run_usage(
+    *,
+    input_tokens: int = 0,
+    output_tokens: int = 0,
+    input_cost: float = 0.0,
+    output_cost: float = 0.0,
+) -> None:
+    tracing.set_usage(
+        input_tokens=input_tokens,
+        output_tokens=output_tokens,
+        input_cost=input_cost,
+        output_cost=output_cost,
+    )
+
+
+def _usage_value(usage: object, name: str) -> int:
+    value = getattr(usage, name, 0) if usage is not None else 0
+    return int(value or 0)
+
+
+def _preview(text: str, max_chars: int = 500) -> str:
+    text = " ".join((text or "").split())
+    return text[:max_chars]
+
+
 def _generate(messages: List[Dict[str, str]], max_new_tokens: int, temperature: float) -> str:
     assert _client is not None
     t0 = time.perf_counter()
@@ -98,10 +132,29 @@ def _generate(messages: List[Dict[str, str]], max_new_tokens: int, temperature: 
     )
     elapsed = time.perf_counter() - t0
     content = response.choices[0].message.content or ""
-    tokens = response.usage.completion_tokens if response.usage else 0
-    tps = tokens / elapsed if elapsed > 0 else 0
-    logger.debug("Generated %d tokens in %.2fs (%.1f tok/s)", tokens, elapsed, tps)
+    prompt_tokens = _usage_value(response.usage, "prompt_tokens")
+    completion_tokens = _usage_value(response.usage, "completion_tokens")
+    total_tokens = _usage_value(response.usage, "total_tokens") or prompt_tokens + completion_tokens
+    tps = completion_tokens / elapsed if elapsed > 0 else 0
+    logger.debug("Generated %d tokens in %.2fs (%.1f tok/s)", completion_tokens, elapsed, tps)
+    _set_current_run_usage(input_tokens=prompt_tokens, output_tokens=completion_tokens)
+    _add_current_run_metadata(
+        ls_provider="vllm",
+        ls_model_name=_model_name,
+        model=_model_name,
+        max_new_tokens=max_new_tokens,
+        temperature=temperature,
+        prompt_tokens=prompt_tokens,
+        completion_tokens=completion_tokens,
+        total_tokens=total_tokens,
+        elapsed_s=round(elapsed, 4),
+        tokens_per_second=round(tps, 2),
+    )
+    _add_current_run_outputs({"response": content, "response_preview": _preview(content)})
     return content
+
+
+_generate_traced = tracing.decorate(_generate, name="llm_generate", run_type="llm")
 
 
 # ---------------------------------------------------------------------------
@@ -128,7 +181,12 @@ def get_response(
     """Generate a CBT (TASK_1) or out-of-scope (TASK_3) response."""
     system_prompt = _build_system_prompt(task_label, rag_context)
     messages = [{"role": "system", "content": system_prompt}, *history]
-    response = _generate(messages, max_new_tokens=512, temperature=0.6)
+    _add_current_run_metadata(
+        effective_label=task_label,
+        rag_context_chars=len(rag_context or ""),
+        history_turns=len(history),
+    )
+    response = _generate_traced(messages, max_new_tokens=512, temperature=0.6)
 
     if task_label != "TASK_2":
         response_lower = response.lower()
@@ -145,7 +203,89 @@ def get_crisis_empathy(history: List[Dict[str, str]]) -> str:
         {"role": "system", "content": _CRISIS_EMPATHY_PROMPT},
         *history[-2:],
     ]
-    return _generate(messages, max_new_tokens=64, temperature=0.5)
+    _add_current_run_metadata(effective_label="TASK_2", history_turns=len(history))
+    return _generate_traced(messages, max_new_tokens=64, temperature=0.5)
+
+
+def _stream_response_impl(
+    history: List[Dict[str, str]],
+    task_label: str,
+    rag_context: str = "",
+) -> Iterator[str]:
+    assert _client is not None
+
+    system_prompt = _build_system_prompt(task_label, rag_context)
+    messages = [{"role": "system", "content": system_prompt}, *history]
+    _add_current_run_metadata(
+        model=_model_name,
+        effective_label=task_label,
+        rag_context_chars=len(rag_context or ""),
+        history_turns=len(history),
+        temperature=0.6,
+        max_new_tokens=512,
+    )
+
+    t0 = time.perf_counter()
+    first_token = True
+    output_tokens = 0
+    prompt_tokens = 0
+    total_tokens = 0
+    ttft = None
+
+    stream_kwargs = {
+        "model": _model_name,
+        "messages": messages,  # type: ignore[arg-type]
+        "max_tokens": 512,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "stream": True,
+        "stream_options": {"include_usage": True},
+    }
+    try:
+        stream_cm = _client.chat.completions.create(**stream_kwargs)
+    except Exception as exc:
+        if "stream_options" not in str(exc):
+            raise
+        logger.warning("vLLM stream_options unsupported; falling back without usage chunks.")
+        stream_kwargs.pop("stream_options", None)
+        stream_cm = _client.chat.completions.create(**stream_kwargs)
+
+    with stream_cm as stream:
+        for chunk in stream:
+            if getattr(chunk, "usage", None) is not None:
+                prompt_tokens = _usage_value(chunk.usage, "prompt_tokens")
+                output_tokens = _usage_value(chunk.usage, "completion_tokens") or output_tokens
+                total_tokens = _usage_value(chunk.usage, "total_tokens")
+                continue
+            delta = chunk.choices[0].delta.content
+            if delta:
+                if first_token:
+                    ttft = time.perf_counter() - t0
+                    logger.debug("Time to first token: %.3fs", ttft)
+                    first_token = False
+                output_tokens += 1
+                yield delta
+
+    elapsed = time.perf_counter() - t0
+    total_tokens = total_tokens or prompt_tokens + output_tokens
+    tps = output_tokens / elapsed if elapsed > 0 else 0
+    _set_current_run_usage(input_tokens=prompt_tokens, output_tokens=output_tokens)
+    _add_current_run_metadata(
+        ls_provider="vllm",
+        ls_model_name=_model_name,
+        prompt_tokens=prompt_tokens,
+        completion_tokens=output_tokens,
+        total_tokens=total_tokens,
+        token_count=output_tokens,
+        ttft_s=round(ttft, 4) if ttft is not None else None,
+        elapsed_s=round(elapsed, 4),
+        tokens_per_second=round(tps, 2),
+    )
+    _add_current_run_outputs({"token_count": output_tokens})
+    logger.debug("Stream complete: %d tokens in %.2fs (%.1f tok/s)", output_tokens, elapsed, tps)
+
+
+_stream_response_traced = tracing.decorate(_stream_response_impl, name="llm_stream", run_type="llm")
 
 
 def stream_response(
@@ -154,32 +294,4 @@ def stream_response(
     rag_context: str = "",
 ) -> Iterator[str]:
     """Stream tokens for a CBT (TASK_1) or out-of-scope (TASK_3) response."""
-    assert _client is not None
-
-    system_prompt = _build_system_prompt(task_label, rag_context)
-    messages = [{"role": "system", "content": system_prompt}, *history]
-
-    t0 = time.perf_counter()
-    first_token = True
-    token_count = 0
-
-    with _client.chat.completions.create(
-        model=_model_name,
-        messages=messages,  # type: ignore[arg-type]
-        max_tokens=512,
-        temperature=0.6,
-        top_p=0.9,
-        stream=True,
-    ) as stream:
-        for chunk in stream:
-            delta = chunk.choices[0].delta.content
-            if delta:
-                if first_token:
-                    ttft = time.perf_counter() - t0
-                    logger.debug("Time to first token: %.3fs", ttft)
-                    first_token = False
-                token_count += 1
-                yield delta
-
-    elapsed = time.perf_counter() - t0
-    logger.debug("Stream complete: %d tokens in %.2fs (%.1f tok/s)", token_count, elapsed, token_count / elapsed if elapsed > 0 else 0)
+    yield from _stream_response_traced(history, task_label, rag_context)

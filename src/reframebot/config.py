@@ -36,11 +36,19 @@ class Settings(BaseSettings):
     crisis_semantic_sim_threshold: float = 0.62
     crisis_semantic_sim_margin: float = 0.08
     crisis_confidence_threshold: float = 0.90
+    crisis_task2_prob_threshold: float = 0.10
 
     # --- API ---
     cors_origins: list[str] = ["*"]
     host: str = "0.0.0.0"
     port: int = 8000
+
+    # --- LangSmith tracing ---
+    langsmith_tracing: bool = False
+    langsmith_project: str = "reframebot-dev"
+    app_version: str = "dev"
+    guardrail_version: str = "local"
+    rag_top_k: int = 2
 
     @field_validator("cors_origins", mode="before")
     @classmethod
@@ -69,6 +77,7 @@ class Settings(BaseSettings):
         if v:
             return v
         candidates = [
+            _REPO_ROOT / "guardrail_model_retrained_clean" / "best",
             _REPO_ROOT / "guardrail_model_retrained" / "best",
             _REPO_ROOT / "guardrail_model" / "checkpoint-950",
         ]
