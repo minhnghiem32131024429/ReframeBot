@@ -48,7 +48,7 @@ class Settings(BaseSettings):
     langsmith_project: str = "reframebot-dev"
     app_version: str = "dev"
     guardrail_version: str = "local"
-    rag_top_k: int = 2
+    rag_top_k: int = 3
 
     @field_validator("cors_origins", mode="before")
     @classmethod

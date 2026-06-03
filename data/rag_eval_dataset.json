@@ -1,0 +1,34 @@
+[
+  {
+    "question": "I keep imagining that failing one quiz means I will fail the whole course. What CBT concept explains this?",
+    "ground_truth": "This is catastrophizing: predicting a highly negative future without considering more likely outcomes. A helpful response should validate the stress and invite the student to examine evidence for and against the thought."
+  },
+  {
+    "question": "I feel like a total failure because I did badly on one exam. What kind of thinking pattern is this?",
+    "ground_truth": "This is all-or-nothing thinking and emotional reasoning. The answer should explain that one exam does not define the student's whole ability and should gently explore a more balanced thought."
+  },
+  {
+    "question": "I cannot focus for long study sessions and feel overwhelmed by the size of my assignment. What technique could help?",
+    "ground_truth": "The Pomodoro Technique can help by breaking work into 25-minute focus intervals with short breaks, making large tasks feel more manageable."
+  },
+  {
+    "question": "I read the textbook but forget everything immediately. What study method should I try?",
+    "ground_truth": "Active recall is appropriate because it involves retrieving information from memory through flashcards, self-testing, or explaining without looking at notes."
+  },
+  {
+    "question": "My finals are two months away and I have too many terms to remember. What method fits this?",
+    "ground_truth": "Spaced repetition fits long-term exam preparation by reviewing material at gradually increasing intervals to combat forgetting."
+  },
+  {
+    "question": "I understand a concept only when reading it, but I cannot explain it simply. What should I use?",
+    "ground_truth": "The Feynman Technique helps identify gaps by explaining a concept simply, finding where you get stuck, relearning those parts, and refining the explanation."
+  },
+  {
+    "question": "My thesis feels too vague and scary. How can I make the goal less overwhelming?",
+    "ground_truth": "SMART goals can help turn vague tasks into specific, measurable, achievable, relevant, and time-bound steps."
+  },
+  {
+    "question": "My essay ideas are messy and I cannot see how they connect. What tool could organize them?",
+    "ground_truth": "A mind map can help organize messy thoughts by starting from a central idea, adding branches for subtopics, and showing relationships between ideas."
+  }
+]
