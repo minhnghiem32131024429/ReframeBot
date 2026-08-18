@@ -50,9 +50,8 @@ FastAPI  /chat  or  /chat/stream  (SSE)
         |-- [3] TASK ROUTING  (router.py)
         |       Priority 0: follow-up inside an ongoing academic context
         |       Priority 1: academic keyword match (regex)
-        |       Priority 2: TASK_2 at high confidence  --> hotlines  (stop)
-        |       Priority 3: TASK_2 at low confidence   --> hotlines  (stop)
-        |       Priority 4: trust guardrail label
+        |       Priority 2: TASK_2 at any confidence  --> hotlines  (stop)
+        |       Priority 3: trust guardrail label
         |       Effective label: TASK_1 | TASK_2 | TASK_3
         |
         |-- [4] RAG RETRIEVAL  (rag.py)  -- TASK_1 only, optional
